@@ -20,60 +20,21 @@ with st.sidebar:
 st.title("References")
 
 st.markdown("""
-### Academic Literature
 
-1. **Policy Bindingness Assessment**
-   - Bodansky, D. (2016). The Legal Character of the Paris Agreement. *Review of European, Comparative & International Environmental Law*, 25(2), 142-150.
-   - Falkner, R. (2016). The Paris Agreement and the new logic of international climate politics. *International Affairs*, 92(5), 1107-1125.
 
-2. **Climate Policy Analysis**
-   - Jordan, A., et al. (2018). Governing climate change polycentrically: setting the scene. *Climate Policy*, 18(5), 545-557.
-   - Ostrom, E. (2010). Polycentric systems for coping with collective action and global environmental change. *Global Environmental Change*, 20(4), 550-557.
+- D’Orazio, P. (2021). *Climate-related financial policy index: A composite index to compare the engagement in green financial policymaking at the global level*. Ecological Economics, 193, 107308. https://doi.org/10.1016/j.ecolind.2022.109065
 
-3. **Legal Language Processing**
-   - Chalkidis, I., et al. (2020). LEGAL-BERT: The Muppets straight out of Law School. *Findings of EMNLP*, 2898-2904.
-   - Niklaus, J., et al. (2021). Swiss-Judgment-Prediction: A Multilingual Legal Judgment Prediction Benchmark. *ACL-IJCNLP 2021*.
+- DeepSeek AI. (2024). *DeepSeek-V3: Open LLM for reasoning, coding, and knowledge tasks*. https://github.com/deepseek-ai/DeepSeek-V3
 
-4. **LLM and RAG Technologies**
-   - Lewis, M., et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. *NeurIPS 2020*.
-   - Brown, T., et al. (2020). Language Models are Few-Shot Learners. *NeurIPS 2020*.
+- Lewis, M., Liu, Y., Goyal, N., et al. (2020). *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks*. NeurIPS 33, 9459–9474. https://arxiv.org/abs/2005.11401
 
-### Technical Resources
+- Reimers, N., & Gurevych, I. (2019). *Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks*. EMNLP 2019. https://arxiv.org/abs/1908.10084
 
-1. **Vector Databases and Similarity Search**
-   - Johnson, J., et al. (2019). Billion-scale similarity search with GPUs. *IEEE Transactions on Big Data*.
-   - Malkov, Y. A., & Yashunin, D. A. (2020). Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs. *IEEE transactions on pattern analysis and machine intelligence*.
+- Johnson, J., Douze, M., & Jégou, H. (2019). *Billion-scale similarity search with GPUs*. IEEE Transactions on Big Data, 7(3), 535–547. https://doi.org/10.1109/TBDATA.2019.2921572
 
-2. **Natural Language Processing**
-   - Devlin, J., et al. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. *NAACL 2019*.
-   - Reimers, N., & Gurevych, I. (2019). Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. *EMNLP 2019*.
+- Kohavi, R. (1995). *A study of cross-validation and bootstrap for accuracy estimation and model selection*. IJCAI 14(2), 1137–1143.
 
-### Policy Documents
-
-1. **International Climate Agreements**
-   - United Nations Framework Convention on Climate Change (1992)
-   - Paris Agreement (2015)
-   - Glasgow Climate Pact (2021)
-
-2. **National Climate Policies**
-   - European Union Climate Action Plan
-   - United States Climate Action Plan
-   - China's National Climate Change Program
-
-### Tools and Frameworks
-
-1. **Machine Learning Libraries**
-   - PyTorch
-   - Transformers
-   - Sentence-Transformers
-
-2. **Vector Search**
-   - FAISS
-   - Annoy
-   - HNSW
-
-3. **Web Development**
-   - Streamlit
-   - Plotly
-   - Pandas
-""") 
+- Chen, Z. Z., Ma, J., Zhang, X., Hao, N., Yan, A., Nourbakhsh, A., Yang, X., McAuley, J., Petzold, L., & Wang, W. Y. (2024). A Survey on Large Language Models for Critical Societal Domains: Finance, Healthcare, and Law. arXiv preprint. https://arxiv.org/abs/2405.01769
+            
+- Cheng, Q., Liu, L., Zhu, Q., Yu, R., Jin, Z., Xie, Y., & Jia, X. (2025). LLM-based Evaluation Policy Extraction for Ecological Modeling. arXiv preprint. https://arxiv.org/abs/2505.13794
+""")

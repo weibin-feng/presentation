@@ -11,33 +11,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# 自定义CSS样式
-st.markdown("""
-    <style>
-    .main {
-        padding: 2rem;
-    }
-    .stMarkdown h1 {
-        padding-bottom: 1rem;
-        border-bottom: 2px solid #E5E7EB;
-    }
-    .stMarkdown h2 {
-        margin-top: 2rem;
-    }
-    .stDataFrame {
-        border: 1px solid #E5E7EB;
-        border-radius: 8px;
-        padding: 1rem;
-        margin: 1rem 0;
-    }
-    .stMarkdown blockquote {
-        border-left: 4px solid #3B82F6;
-        padding-left: 1rem;
-        margin: 1rem 0;
-        background-color: #F8FAFC;
-    }
-    </style>
-""", unsafe_allow_html=True)
+
 
 # 侧边栏
 with st.sidebar:
@@ -55,20 +29,21 @@ with st.sidebar:
 st.title("Future Work")
 
 # 主要内容
+# Future Work 内容
 st.markdown("""
-## Research Background
 
-Over the past decade, sustainable investing has gained increasing importance in global capital markets.
+#### From Policy to Markets  
+Next, we’ll test whether the strength of climate policy—captured by our bindingness scores—can help explain the flow of money into or out of U.S. ESG mutual funds.
 
-Recently, U.S. ESG mutual funds have seen notable outflows.
+#### Quarterly Analysis  
+Using our policy scores, we’ll construct a quarterly panel combining ESG fund flows with government policy signals, and apply fixed-effects regressions to explore the relationship.
 
-While concerns over greenwashing and higher interest rates are well-known factors, another possible explanation is the changing stance of the U.S. government toward sustainability.
+#### Main Hypothesis  
+We expect that stronger, more binding climate policies increase investor confidence, leading to more stable or positive ESG fund flows.
 
-This makes the U.S. an ideal context to study how policy attitudes influence ESG fund flows.
+#### Controlling for Other Factors  
+To isolate the effect of policy, we’ll include controls for interest rates, market volatility, and investor sentiment.
 
-## Research Objective
-
-To capture the national stance on sustainability, we use a climate-related policy index.
-
-This index reflects bindingness of climate-related financial policies.
-""") 
+#### Why It Matters  
+If policy strength truly influences capital flows, this would offer valuable insights into how public commitments drive private investment in sustainable finance.
+""")

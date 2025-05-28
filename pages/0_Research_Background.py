@@ -1,7 +1,8 @@
 import streamlit as st
 
+# 页面配置
 st.set_page_config(
-    page_title="Research Background - PolicyBindScoreRAG",
+    page_title="Research Background",
     page_icon="📚",
     layout="wide"
 )
@@ -17,72 +18,56 @@ with st.sidebar:
     <p><strong>Date:</strong> May 2025</p>
 </div>
 """, unsafe_allow_html=True)
-    
 
+# 页面主标题
+st.title("Research Background & Motivation")
 
-st.title("Research Background")
-
+# 正文内容
 st.markdown("""
-### Climate Policy Landscape
+### Background: ESG Fund Flows and Policy Signals
 
-Climate policies play a crucial role in addressing global environmental challenges. However, the effectiveness of these policies often depends on their bindingness - the degree to which they create legally enforceable obligations. Current policy assessments primarily rely on qualitative analysis, which can lead to:
+In recent years, U.S. ESG mutual funds have shifted from rapid growth to significant net outflows.  
+While macroeconomic drivers such as interest rate hikes and market sentiment shifts are widely acknowledged,  
+**a less explored factor is the changing stance of the U.S. government on climate and sustainability.**
 
-- Inconsistent evaluation methods
-- Subjective interpretations
-- Limited comparability across policies
-- Lack of standardized metrics
+This research proposes a **more responsive, higher-frequency policy indicator** to capture national-level climate policy signals  
+and investigate their potential explanatory power for ESG capital flows.
 
-### Research Gap
+---
 
-The existing literature reveals several key gaps in policy bindingness assessment:
+### Motivation: Limitations of Existing Indices
 
-1. **Methodological Limitations**
-   - Heavy reliance on expert judgment
-   - Lack of quantitative measures
-   - Inconsistent evaluation frameworks
+We build on the Climate-related Financial Policy Index (CRFPI) developed by D’Orazio & Thole (2022),  
+which attempts to quantify policy bindingness across more than 70 countries.  
+However, the CRFPI suffers from several serious limitations:
 
-2. **Technical Challenges**
-   - Complex legal language interpretation
-   - Diverse policy structures
-   - Varying enforcement mechanisms
+- Covers only ~100 country-year observations, with many missing entries  
+- Ends in 2020, with annual frequency — insufficient for fast-evolving contexts  
+- Lacks a transparent or reproducible evaluation methodology  
+- Not well-suited for focused empirical analysis in a single country like the U.S.
 
-3. **Practical Constraints**
-   - Time-consuming manual analysis
-   - Limited scalability
-   - Resource-intensive evaluation process
+These issues **limit its utility** for understanding the role of policy in dynamic capital markets.
 
-### Research Objectives
+---
 
-This study aims to address these gaps by developing a novel framework that:
+### Contribution: Method, Data, and Scope
 
-1. **Quantifies Policy Bindingness**
-   - Establishes standardized scoring criteria
-   - Provides numerical measures of bindingness
-   - Enables comparative analysis
+This study introduces several key innovations:
 
-2. **Leverages Advanced Technologies**
-   - Utilizes Large Language Models (LLMs)
-   - Implements Retrieval-Augmented Generation (RAG)
-   - Automates policy analysis
+- **Methodological Advancement**:  
+  A novel scoring framework using **Large Language Models (LLMs)** and **Retrieval-Augmented Generation (RAG)** to automate policy bindingness evaluation
 
-3. **Ensures Practical Applicability**
-   - Offers scalable solutions
-   - Provides interpretable results
-   - Supports decision-making processes
+- **Enhanced Data Resolution**:  
+  A monthly U.S.-specific climate policy dataset extended through **May 2025**, enabling more granular empirical research
 
-### Significance
+- **Research Enabler**:  
+  A transparent, scalable, and reproducible indicator to support future analysis of **ESG fund behavior and policy impact**
 
-This research contributes to the field by:
+---
 
-- Developing a novel quantitative framework for policy bindingness assessment
-- Providing a standardized methodology for policy evaluation
-- Enabling more objective and consistent policy analysis
-- Supporting evidence-based policy development and implementation
+### Scope of This Presentation
 
-### Research Questions
-
-1. How can policy bindingness be effectively quantified?
-2. What are the key dimensions of policy bindingness?
-3. How can LLM and RAG technologies enhance policy analysis?
-4. What are the practical implications of automated policy bindingness assessment?
-""") 
+This presentation focuses on the **first half of the project**:  
+the design and implementation of the LLM+RAG-based policy scoring method,  
+and the construction of the high-frequency policy bindingness dataset for the U.S.
+""")

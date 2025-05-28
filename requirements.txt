@@ -1,9 +1,9 @@
 streamlit==1.32.0
 pandas==2.2.1
 numpy==1.26.4
-transformers==4.30.2
-huggingface_hub==0.14.1
+transformers==4.39.3
 sentence-transformers==2.2.2
+huggingface_hub==0.22.2
 scikit-learn==1.4.1
 seaborn==0.13.2
 matplotlib==3.8.3

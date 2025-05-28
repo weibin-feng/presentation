@@ -19,8 +19,7 @@ with st.sidebar:
 </div>
 """, unsafe_allow_html=True)
 
-# 添加校徽
-st.image("university-of-southampton-text.svg", width=200)
+
 
 st.title("Prompts")
 

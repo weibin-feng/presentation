@@ -25,8 +25,8 @@ st.markdown("""
 st.markdown("""
 <div style='text-align: center; font-size: 18px; padding-bottom: 30px'>
     <p><strong>Author:</strong> Yini Ma</p>
-    <p><strong>Supervisor:</strong> Dr. Mohamed Bakoush， Professor Woon Sau Leung</p>
-    <p><strong>Affiliation:</strong> University of Southampton</p>
+    <p><strong>Supervisor:</strong> Dr. Mohamed Bakoush, Professor Woon Sau Leung</p>
+    <p><strong>Affiliation:</strong> Southampton Business School, University of Southampton</p>
     <p><strong>Date:</strong> May 2025</p>
 </div>
 """, unsafe_allow_html=True)
