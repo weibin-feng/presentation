@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import StratifiedKFold
+import os
+os.system("pip install plotly")
 import plotly.express as px
 import plotly.graph_objects as go
 from sklearn.metrics import roc_auc_score, roc_curve, precision_recall_curve, average_precision_score
