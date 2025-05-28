@@ -1,0 +1,128 @@
+2025-05-26 05:11:36,170 - INFO - 日志文件已创建: logs/api_inference_20250526_051136.log
+2025-05-26 05:11:36,170 - INFO - 
+=== 初始化政策评分器 ===
+2025-05-26 05:11:36,170 - INFO - 
+1. 初始化API客户端...
+2025-05-26 05:11:36,207 - INFO - API客户端初始化完成，使用模型: deepseek-chat
+2025-05-26 05:11:36,207 - INFO - 输出目录已创建: evaluation_results
+2025-05-26 05:11:36,207 - INFO - 
+=== 开始处理政策 ===
+2025-05-26 05:11:36,207 - INFO - 找到 1 个提示文件
+2025-05-26 05:11:36,222 - INFO - 
+处理文件: prompt_policy_1841.txt
+2025-05-26 05:11:36,222 - INFO - 
+=== 评分政策 ===
+2025-05-26 05:11:36,222 - INFO - 调用API...
+2025-05-26 05:12:08,628 - INFO - 成功获取API响应
+2025-05-26 05:12:08,629 - INFO - 
+=== 提取JSON响应 ===
+2025-05-26 05:12:08,629 - INFO - 成功提取JSON字符串
+2025-05-26 05:12:08,629 - INFO - 提取的JSON字符串: {
+  "Score": 3,
+  "Confidence": 8,
+  "Explanation": {
+    "Legal_Language": "The policy uses binding terms such as 'shall' and 'must', indicating mandatory requirements.",
+    "Source_of_Authority": "The policy is based on a statute or regulation, providing it with legal backing.",
+    "Enforcement_Mechanism": "The policy includes penalties and reporting requirements for non-compliance.",
+    "Obligations": "Specific entities (e.g., local jurisdictions, state agencies) are legally required to comply with the policy's mandates.",
+    "Optionality_or_Incentives": "The policy does not offer incentives; compliance is mandatory without optional participation."
+  },
+  "Inference_Chain": [
+    "Step 1: Direct analysis of the current policy shows binding terms ('shall', 'must') and regulatory authority.",
+    "Step 2: Retrieved Density and Missing Middle Housing Requirements (sim=1.00, Score 3) has similar features, including mandatory language and enforceable obligations.",
+    "Step 3: Retrieved ZE and Plug-in Hybrid Light-Duty Fleet Purchase Goal (sim=0.45, Score 2) shares some elements but lacks strict enforceability due to conditional language.",
+    "Step 4: Current policy aligns more with Density and Missing Middle Housing Requirements due to its clear mandatory language and enforcement mechanisms.",
+    "Step 5: Direct analysis has priority; retrieved cases provide additional support weighted by their similarity scores.",
+    "Step 6: Final judgment: Score 3, Confidence 8."
+  ],
+  "Comparable_Cases": [
+    {
+      "Policy_ID": "policy/1841",
+      "Case_Name": "Density and Missing Middle Housing Requirements",
+      "Score": 3,
+      "Reason": "This case is highly similar due to its use of mandatory language ('requires') and enforceable obligations on local jurisdictions."
+    },
+    {
+      "Policy_ID": "policy/1095",
+      "Case_Name": "ZE and Plug-in Hybrid Light-Duty Fleet Purchase Goal",
+      "Score": 2,
+      "Reason": "This case is relevant but less similar due to its conditional language ('where practicable'), which reduces bindingness compared to the current policy."
+    }
+  ]
+}
+2025-05-26 05:12:08,630 - INFO - 成功解析JSON
+2025-05-26 05:12:08,630 - INFO - 解析后的JSON对象: {
+  "Score": 3,
+  "Confidence": 8,
+  "Explanation": {
+    "Legal_Language": "The policy uses binding terms such as 'shall' and 'must', indicating mandatory requirements.",
+    "Source_of_Authority": "The policy is based on a statute or regulation, providing it with legal backing.",
+    "Enforcement_Mechanism": "The policy includes penalties and reporting requirements for non-compliance.",
+    "Obligations": "Specific entities (e.g., local jurisdictions, state agencies) are legally required to comply with the policy's mandates.",
+    "Optionality_or_Incentives": "The policy does not offer incentives; compliance is mandatory without optional participation."
+  },
+  "Inference_Chain": [
+    "Step 1: Direct analysis of the current policy shows binding terms ('shall', 'must') and regulatory authority.",
+    "Step 2: Retrieved Density and Missing Middle Housing Requirements (sim=1.00, Score 3) has similar features, including mandatory language and enforceable obligations.",
+    "Step 3: Retrieved ZE and Plug-in Hybrid Light-Duty Fleet Purchase Goal (sim=0.45, Score 2) shares some elements but lacks strict enforceability due to conditional language.",
+    "Step 4: Current policy aligns more with Density and Missing Middle Housing Requirements due to its clear mandatory language and enforcement mechanisms.",
+    "Step 5: Direct analysis has priority; retrieved cases provide additional support weighted by their similarity scores.",
+    "Step 6: Final judgment: Score 3, Confidence 8."
+  ],
+  "Comparable_Cases": [
+    {
+      "Policy_ID": "policy/1841",
+      "Case_Name": "Density and Missing Middle Housing Requirements",
+      "Score": 3,
+      "Reason": "This case is highly similar due to its use of mandatory language ('requires') and enforceable obligations on local jurisdictions."
+    },
+    {
+      "Policy_ID": "policy/1095",
+      "Case_Name": "ZE and Plug-in Hybrid Light-Duty Fleet Purchase Goal",
+      "Score": 2,
+      "Reason": "This case is relevant but less similar due to its conditional language ('where practicable'), which reduces bindingness compared to the current policy."
+    }
+  ]
+}
+2025-05-26 05:12:08,630 - INFO - JSON响应验证通过
+2025-05-26 05:12:08,631 - INFO - 最终处理后的JSON对象: {
+  "Score": 3,
+  "Confidence": 8,
+  "Explanation": {
+    "Legal_Language": "The policy uses binding terms such as 'shall' and 'must', indicating mandatory requirements.",
+    "Source_of_Authority": "The policy is based on a statute or regulation, providing it with legal backing.",
+    "Enforcement_Mechanism": "The policy includes penalties and reporting requirements for non-compliance.",
+    "Obligations": "Specific entities (e.g., local jurisdictions, state agencies) are legally required to comply with the policy's mandates.",
+    "Optionality_or_Incentives": "The policy does not offer incentives; compliance is mandatory without optional participation."
+  },
+  "Inference_Chain": [
+    "Step 1: Direct analysis of the current policy shows binding terms ('shall', 'must') and regulatory authority.",
+    "Step 2: Retrieved Density and Missing Middle Housing Requirements (sim=1.00, Score 3) has similar features, including mandatory language and enforceable obligations.",
+    "Step 3: Retrieved ZE and Plug-in Hybrid Light-Duty Fleet Purchase Goal (sim=0.45, Score 2) shares some elements but lacks strict enforceability due to conditional language.",
+    "Step 4: Current policy aligns more with Density and Missing Middle Housing Requirements due to its clear mandatory language and enforcement mechanisms.",
+    "Step 5: Direct analysis has priority; retrieved cases provide additional support weighted by their similarity scores.",
+    "Step 6: Final judgment: Score 3, Confidence 8."
+  ],
+  "Comparable_Cases": {
+    "similar_cases": [
+      {
+        "Policy_ID": "policy/1841",
+        "Case_Name": "Density and Missing Middle Housing Requirements",
+        "Score": 3,
+        "Reason": "This case is highly similar due to its use of mandatory language ('requires') and enforceable obligations on local jurisdictions."
+      }
+    ],
+    "contrasting_cases": [
+      {
+        "Policy_ID": "policy/1095",
+        "Case_Name": "ZE and Plug-in Hybrid Light-Duty Fleet Purchase Goal",
+        "Score": 2,
+        "Reason": "This case is relevant but less similar due to its conditional language ('where practicable'), which reduces bindingness compared to the current policy."
+      }
+    ]
+  }
+}
+2025-05-26 05:12:08,631 - INFO - 评分结果: 3, 置信度: 8
+2025-05-26 05:12:08,631 - INFO - 成功处理政策: policy_1841
+2025-05-26 05:12:09,799 - INFO - 
+结果已保存到: evaluation_results/evaluation_results_deepseek-chat_20250526_051209.xlsx

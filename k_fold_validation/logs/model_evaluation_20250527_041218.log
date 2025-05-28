@@ -1,0 +1,9 @@
+2025-05-27 04:12:18,523 - INFO - 日志文件已创建: logs/model_evaluation_20250527_041218.log
+2025-05-27 04:12:18,523 - INFO - 
+=== 初始化模型评估器 ===
+2025-05-27 04:12:18,524 - INFO - 输出目录已创建: evaluation_results
+2025-05-27 04:12:18,545 - INFO - 成功加载 30 条真实评分数据
+2025-05-27 04:12:18,546 - INFO - 
+=== 开始模型评估 ===
+2025-05-27 04:12:18,712 - INFO - 成功加载预测结果: 30 条记录
+2025-05-27 04:12:18,713 - ERROR - 模型评估过程中发生错误: You are trying to merge on int64 and object columns for key 'Policy_ID'. If you wish to proceed you should use pd.concat

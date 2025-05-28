@@ -1,0 +1,33 @@
+2025-05-27 22:20:53,487 - INFO - Log file created: /Users/bu24999/Desktop/yini/k_fold_validation/logs/metrics_calculation_20250527_222053.log
+2025-05-27 22:20:53,487 - INFO - 
+=== Initializing Metrics Calculator ===
+2025-05-27 22:20:53,487 - INFO - Output directory created: /Users/bu24999/Desktop/yini/k_fold_validation/metrics_results
+2025-05-27 22:20:53,487 - INFO - 
+=== Starting Metrics Calculation ===
+2025-05-27 22:20:53,487 - INFO - Reading file: /Users/bu24999/Desktop/yini/k_fold_validation/evaluation_results/policy_score_with_predictions_final_20250527_044812.xlsx
+2025-05-27 22:20:54,084 - INFO - 
+Confusion Matrix:
+2025-05-27 22:20:54,084 - INFO - [[ 6  0  0]
+ [ 0 11  0]
+ [ 0  1 12]]
+2025-05-27 22:20:54,485 - INFO - 
+Classification Report:
+2025-05-27 22:20:54,487 - INFO -               precision    recall  f1-score   support
+
+           1       1.00      1.00      1.00         6
+           2       0.92      1.00      0.96        11
+           3       1.00      0.92      0.96        13
+
+    accuracy                           0.97        30
+   macro avg       0.97      0.97      0.97        30
+weighted avg       0.97      0.97      0.97        30
+
+2025-05-27 22:20:54,489 - INFO - 
+ROC AUC: 0.9784
+2025-05-27 22:20:54,536 - INFO - 
+Accuracy: 0.9667
+2025-05-27 22:20:54,536 - INFO - Weighted Precision: 0.9694
+2025-05-27 22:20:54,536 - INFO - Weighted Recall: 0.9667
+2025-05-27 22:20:54,536 - INFO - Weighted F1 Score: 0.9667
+2025-05-27 22:20:54,567 - INFO - 
+Results saved to: /Users/bu24999/Desktop/yini/k_fold_validation/metrics_results/metrics_results_20250527_222054.xlsx

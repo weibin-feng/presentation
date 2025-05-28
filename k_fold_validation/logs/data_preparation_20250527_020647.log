@@ -1,0 +1,259 @@
+2025-05-27 02:06:47,362 - INFO - 日志文件已创建: logs/data_preparation_20250527_020647.log
+2025-05-27 02:06:47,362 - INFO - 
+=== 初始化数据准备器 ===
+2025-05-27 02:06:47,362 - INFO - 
+1. 初始化文本编码器...
+2025-05-27 02:06:50,566 - INFO - 文本编码器初始化完成
+2025-05-27 02:06:50,566 - INFO - 
+=== 开始数据处理 ===
+2025-05-27 02:06:50,566 - INFO - 
+=== 加载数据 ===
+2025-05-27 02:06:50,566 - INFO - 加载原始数据...
+2025-05-27 02:06:51,662 - INFO - 成功加载 30 条数据
+2025-05-27 02:06:51,662 - INFO - 数据列名: ['Policy_ID', 'Policy_Name', 'Type', 'Description', 'Score', 'Explanation']
+2025-05-27 02:06:51,674 - INFO - 数据示例:
+     Policy_ID                                      Policy_Name      Type                                                                                                                                                                                                                                                                                                                                                                                                                                  Description  Score                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Explanation
+0  policy/1841  Density and Missing Middle Housing Requirements  Standard  Requires local jurisdictions to allow an increase in density of qualified projects located within 3/4 mile of passenger rail stations. Also allows middle housing units in single-family residential zones, and allows for greater density levels for qualified projects built in multifamily, nonresidential, and mixed-use zones.EQUITY DETAILQualified projects are those that include a minimum percentage of affordable housing units.      3  Legal Language: The policy uses the term **"requires"**, indicating mandatory action by local jurisdictions.\nSource of Authority: It is labeled as a **"Standard"**, which typically implies regulatory backing rather than a guideline or program.\nEnforcement Mechanism: While penalties are not explicitly stated, the term “requires” strongly implies enforceability under planning or zoning law.\nObligations: Local jurisdictions are **obligated to allow increased density** under defined conditions.\nOptionality/Incentives: There is no indication that compliance is voluntary or incentivized—rather, it appears to be **a planning requirement** with clear qualifying criteria (affordable housing minimums).
+2025-05-27 02:06:51,674 - INFO - 
+=== 创建文本嵌入 ===
+2025-05-27 02:06:51,674 - INFO - 组合Type和Description...
+2025-05-27 02:06:51,675 - INFO - 生成文本嵌入...
+2025-05-27 02:06:51,948 - INFO - 嵌入维度: (30, 384)
+2025-05-27 02:06:51,948 - INFO - 保存嵌入到文件...
+2025-05-27 02:06:51,955 - INFO - 嵌入保存完成
+2025-05-27 02:06:51,955 - INFO - 
+=== 创建交叉验证折 ===
+2025-05-27 02:06:51,955 - INFO - 创建 5 折...
+2025-05-27 02:06:51,956 - INFO - 
+原始数据中的类别分布:
+2025-05-27 02:06:51,956 - INFO - Program: 8 个样本
+2025-05-27 02:06:51,956 - INFO - Governance: 8 个样本
+2025-05-27 02:06:51,957 - INFO - Standard: 6 个样本
+2025-05-27 02:06:51,957 - INFO - Targets/Goal: 5 个样本
+2025-05-27 02:06:51,957 - INFO - Analysis and Tools: 3 个样本
+2025-05-27 02:06:51,980 - INFO - 
+折 0 的验证集类别分布:
+2025-05-27 02:06:51,981 - INFO - Standard: 2 个样本
+2025-05-27 02:06:51,981 - INFO - Governance: 2 个样本
+2025-05-27 02:06:51,981 - INFO - Program: 1 个样本
+2025-05-27 02:06:51,981 - INFO - Targets/Goal: 1 个样本
+2025-05-27 02:06:51,981 - INFO - 
+折 0 的训练集类别分布:
+2025-05-27 02:06:51,981 - INFO - Program: 7 个样本
+2025-05-27 02:06:51,981 - INFO - Governance: 6 个样本
+2025-05-27 02:06:51,981 - INFO - Standard: 4 个样本
+2025-05-27 02:06:51,981 - INFO - Targets/Goal: 4 个样本
+2025-05-27 02:06:51,981 - INFO - Analysis and Tools: 3 个样本
+2025-05-27 02:06:51,981 - INFO - 
+折 0 的验证集样本示例:
+2025-05-27 02:06:51,982 - INFO -      Policy_ID      Type
+0  policy/1841  Standard
+2  policy/1844   Program
+2025-05-27 02:06:51,982 - INFO - 
+折 0 的训练集样本示例:
+2025-05-27 02:06:51,982 - INFO -      Policy_ID     Type
+1  policy/1983  Program
+3  policy/1999  Program
+2025-05-27 02:06:51,983 - INFO - 
+折 1 的验证集类别分布:
+2025-05-27 02:06:51,983 - INFO - Program: 2 个样本
+2025-05-27 02:06:51,983 - INFO - Governance: 2 个样本
+2025-05-27 02:06:51,983 - INFO - Standard: 1 个样本
+2025-05-27 02:06:51,983 - INFO - Targets/Goal: 1 个样本
+2025-05-27 02:06:51,983 - INFO - 
+折 1 的训练集类别分布:
+2025-05-27 02:06:51,983 - INFO - Program: 6 个样本
+2025-05-27 02:06:51,983 - INFO - Governance: 6 个样本
+2025-05-27 02:06:51,983 - INFO - Standard: 5 个样本
+2025-05-27 02:06:51,983 - INFO - Targets/Goal: 4 个样本
+2025-05-27 02:06:51,983 - INFO - Analysis and Tools: 3 个样本
+2025-05-27 02:06:51,983 - INFO - 
+折 1 的验证集样本示例:
+2025-05-27 02:06:51,984 - INFO -       Policy_ID      Type
+6   policy/2188   Program
+13  policy/1016  Standard
+2025-05-27 02:06:51,984 - INFO - 
+折 1 的训练集样本示例:
+2025-05-27 02:06:51,984 - INFO -      Policy_ID      Type
+0  policy/1841  Standard
+1  policy/1983   Program
+2025-05-27 02:06:51,984 - INFO - 
+折 2 的验证集类别分布:
+2025-05-27 02:06:51,985 - INFO - Program: 2 个样本
+2025-05-27 02:06:51,985 - INFO - Targets/Goal: 1 个样本
+2025-05-27 02:06:51,985 - INFO - Standard: 1 个样本
+2025-05-27 02:06:51,985 - INFO - Governance: 1 个样本
+2025-05-27 02:06:51,985 - INFO - Analysis and Tools: 1 个样本
+2025-05-27 02:06:51,985 - INFO - 
+折 2 的训练集类别分布:
+2025-05-27 02:06:51,985 - INFO - Governance: 7 个样本
+2025-05-27 02:06:51,985 - INFO - Program: 6 个样本
+2025-05-27 02:06:51,985 - INFO - Standard: 5 个样本
+2025-05-27 02:06:51,985 - INFO - Targets/Goal: 4 个样本
+2025-05-27 02:06:51,985 - INFO - Analysis and Tools: 2 个样本
+2025-05-27 02:06:51,985 - INFO - 
+折 2 的验证集样本示例:
+2025-05-27 02:06:51,985 - INFO -       Policy_ID          Type
+3   policy/1999       Program
+10    policy/15  Targets/Goal
+2025-05-27 02:06:51,985 - INFO - 
+折 2 的训练集样本示例:
+2025-05-27 02:06:51,986 - INFO -      Policy_ID      Type
+0  policy/1841  Standard
+1  policy/1983   Program
+2025-05-27 02:06:51,986 - INFO - 
+折 3 的验证集类别分布:
+2025-05-27 02:06:51,986 - INFO - Program: 2 个样本
+2025-05-27 02:06:51,986 - INFO - Governance: 1 个样本
+2025-05-27 02:06:51,986 - INFO - Standard: 1 个样本
+2025-05-27 02:06:51,986 - INFO - Targets/Goal: 1 个样本
+2025-05-27 02:06:51,986 - INFO - Analysis and Tools: 1 个样本
+2025-05-27 02:06:51,986 - INFO - 
+折 3 的训练集类别分布:
+2025-05-27 02:06:51,986 - INFO - Governance: 7 个样本
+2025-05-27 02:06:51,986 - INFO - Program: 6 个样本
+2025-05-27 02:06:51,986 - INFO - Standard: 5 个样本
+2025-05-27 02:06:51,986 - INFO - Targets/Goal: 4 个样本
+2025-05-27 02:06:51,987 - INFO - Analysis and Tools: 2 个样本
+2025-05-27 02:06:51,987 - INFO - 
+折 3 的验证集样本示例:
+2025-05-27 02:06:51,987 - INFO -      Policy_ID     Type
+1  policy/1983  Program
+4  policy/1893  Program
+2025-05-27 02:06:51,987 - INFO - 
+折 3 的训练集样本示例:
+2025-05-27 02:06:51,987 - INFO -      Policy_ID      Type
+0  policy/1841  Standard
+2  policy/1844   Program
+2025-05-27 02:06:51,988 - INFO - 
+折 4 的验证集类别分布:
+2025-05-27 02:06:51,988 - INFO - Governance: 2 个样本
+2025-05-27 02:06:51,988 - INFO - Standard: 1 个样本
+2025-05-27 02:06:51,988 - INFO - Targets/Goal: 1 个样本
+2025-05-27 02:06:51,988 - INFO - Program: 1 个样本
+2025-05-27 02:06:51,988 - INFO - Analysis and Tools: 1 个样本
+2025-05-27 02:06:51,988 - INFO - 
+折 4 的训练集类别分布:
+2025-05-27 02:06:51,988 - INFO - Program: 7 个样本
+2025-05-27 02:06:51,988 - INFO - Governance: 6 个样本
+2025-05-27 02:06:51,988 - INFO - Standard: 5 个样本
+2025-05-27 02:06:51,988 - INFO - Targets/Goal: 4 个样本
+2025-05-27 02:06:51,988 - INFO - Analysis and Tools: 2 个样本
+2025-05-27 02:06:51,988 - INFO - 
+折 4 的验证集样本示例:
+2025-05-27 02:06:51,989 - INFO -      Policy_ID        Type
+5  policy/1580  Governance
+9  policy/1259    Standard
+2025-05-27 02:06:51,989 - INFO - 
+折 4 的训练集样本示例:
+2025-05-27 02:06:51,989 - INFO -      Policy_ID      Type
+0  policy/1841  Standard
+1  policy/1983   Program
+2025-05-27 02:06:51,990 - INFO - 
+每个折的样本数量:
+2025-05-27 02:06:51,990 - INFO - 折 0: 6 个样本
+2025-05-27 02:06:51,990 - INFO - 折 1: 6 个样本
+2025-05-27 02:06:51,990 - INFO - 折 2: 6 个样本
+2025-05-27 02:06:51,990 - INFO - 折 3: 6 个样本
+2025-05-27 02:06:51,991 - INFO - 折 4: 6 个样本
+2025-05-27 02:06:51,991 - INFO - 
+保存处理后的数据...
+2025-05-27 02:06:51,995 - INFO - 数据保存完成
+2025-05-27 02:06:51,995 - INFO - 
+=== 创建FAISS索引 ===
+2025-05-27 02:06:51,995 - INFO - 为折 0 创建索引...
+2025-05-27 02:06:51,995 - INFO - 训练集大小: 24
+2025-05-27 02:06:51,995 - INFO - 训练集样本示例:
+2025-05-27 02:06:51,996 - INFO -      Policy_ID     Type  fold
+1  policy/1983  Program     3
+3  policy/1999  Program     2
+4  policy/1893  Program     3
+2025-05-27 02:06:51,996 - INFO - 验证集大小: 6
+2025-05-27 02:06:51,996 - INFO - 验证集样本示例:
+2025-05-27 02:06:51,997 - INFO -      Policy_ID          Type  fold
+0  policy/1841      Standard     0
+2  policy/1844       Program     0
+7  policy/1482  Targets/Goal     0
+2025-05-27 02:06:51,997 - INFO - 创建FAISS索引...
+2025-05-27 02:06:51,997 - INFO - 保存索引到文件...
+2025-05-27 02:06:52,002 - INFO - 索引已保存到: processed_data/faiss_index_fold_0.index
+2025-05-27 02:06:52,007 - INFO - 训练数据已保存到: processed_data/train_data_fold_0.pkl
+2025-05-27 02:06:52,007 - INFO - 
+=== 创建FAISS索引 ===
+2025-05-27 02:06:52,007 - INFO - 为折 1 创建索引...
+2025-05-27 02:06:52,007 - INFO - 训练集大小: 24
+2025-05-27 02:06:52,007 - INFO - 训练集样本示例:
+2025-05-27 02:06:52,008 - INFO -      Policy_ID      Type  fold
+0  policy/1841  Standard     0
+1  policy/1983   Program     3
+2  policy/1844   Program     0
+2025-05-27 02:06:52,008 - INFO - 验证集大小: 6
+2025-05-27 02:06:52,008 - INFO - 验证集样本示例:
+2025-05-27 02:06:52,009 - INFO -       Policy_ID          Type  fold
+6   policy/2188       Program     1
+13  policy/1016      Standard     1
+14  policy/1095  Targets/Goal     1
+2025-05-27 02:06:52,009 - INFO - 创建FAISS索引...
+2025-05-27 02:06:52,009 - INFO - 保存索引到文件...
+2025-05-27 02:06:52,013 - INFO - 索引已保存到: processed_data/faiss_index_fold_1.index
+2025-05-27 02:06:52,016 - INFO - 训练数据已保存到: processed_data/train_data_fold_1.pkl
+2025-05-27 02:06:52,017 - INFO - 
+=== 创建FAISS索引 ===
+2025-05-27 02:06:52,017 - INFO - 为折 2 创建索引...
+2025-05-27 02:06:52,017 - INFO - 训练集大小: 24
+2025-05-27 02:06:52,017 - INFO - 训练集样本示例:
+2025-05-27 02:06:52,018 - INFO -      Policy_ID      Type  fold
+0  policy/1841  Standard     0
+1  policy/1983   Program     3
+2  policy/1844   Program     0
+2025-05-27 02:06:52,018 - INFO - 验证集大小: 6
+2025-05-27 02:06:52,018 - INFO - 验证集样本示例:
+2025-05-27 02:06:52,018 - INFO -       Policy_ID          Type  fold
+3   policy/1999       Program     2
+10    policy/15  Targets/Goal     2
+19   policy/493      Standard     2
+2025-05-27 02:06:52,018 - INFO - 创建FAISS索引...
+2025-05-27 02:06:52,018 - INFO - 保存索引到文件...
+2025-05-27 02:06:52,023 - INFO - 索引已保存到: processed_data/faiss_index_fold_2.index
+2025-05-27 02:06:52,027 - INFO - 训练数据已保存到: processed_data/train_data_fold_2.pkl
+2025-05-27 02:06:52,027 - INFO - 
+=== 创建FAISS索引 ===
+2025-05-27 02:06:52,027 - INFO - 为折 3 创建索引...
+2025-05-27 02:06:52,027 - INFO - 训练集大小: 24
+2025-05-27 02:06:52,027 - INFO - 训练集样本示例:
+2025-05-27 02:06:52,028 - INFO -      Policy_ID      Type  fold
+0  policy/1841  Standard     0
+2  policy/1844   Program     0
+3  policy/1999   Program     2
+2025-05-27 02:06:52,028 - INFO - 验证集大小: 6
+2025-05-27 02:06:52,028 - INFO - 验证集样本示例:
+2025-05-27 02:06:52,029 - INFO -       Policy_ID        Type  fold
+1   policy/1983     Program     3
+4   policy/1893     Program     3
+12  policy/1082  Governance     3
+2025-05-27 02:06:52,029 - INFO - 创建FAISS索引...
+2025-05-27 02:06:52,029 - INFO - 保存索引到文件...
+2025-05-27 02:06:52,032 - INFO - 索引已保存到: processed_data/faiss_index_fold_3.index
+2025-05-27 02:06:52,037 - INFO - 训练数据已保存到: processed_data/train_data_fold_3.pkl
+2025-05-27 02:06:52,037 - INFO - 
+=== 创建FAISS索引 ===
+2025-05-27 02:06:52,037 - INFO - 为折 4 创建索引...
+2025-05-27 02:06:52,037 - INFO - 训练集大小: 24
+2025-05-27 02:06:52,037 - INFO - 训练集样本示例:
+2025-05-27 02:06:52,038 - INFO -      Policy_ID      Type  fold
+0  policy/1841  Standard     0
+1  policy/1983   Program     3
+2  policy/1844   Program     0
+2025-05-27 02:06:52,038 - INFO - 验证集大小: 6
+2025-05-27 02:06:52,038 - INFO - 验证集样本示例:
+2025-05-27 02:06:52,039 - INFO -       Policy_ID          Type  fold
+5   policy/1580    Governance     4
+9   policy/1259      Standard     4
+11   policy/631  Targets/Goal     4
+2025-05-27 02:06:52,039 - INFO - 创建FAISS索引...
+2025-05-27 02:06:52,039 - INFO - 保存索引到文件...
+2025-05-27 02:06:52,044 - INFO - 索引已保存到: processed_data/faiss_index_fold_4.index
+2025-05-27 02:06:52,048 - INFO - 训练数据已保存到: processed_data/train_data_fold_4.pkl
+2025-05-27 02:06:52,048 - INFO - 
+=== 数据处理完成 ===
+2025-05-27 02:06:52,048 - INFO - 处理后的数据已保存到: processed_data

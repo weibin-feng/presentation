@@ -1,0 +1,5 @@
+2025-05-27 04:12:44,681 - INFO - 日志文件已创建: logs/model_evaluation_20250527_041244.log
+2025-05-27 04:12:44,681 - INFO - 
+=== 初始化模型评估器 ===
+2025-05-27 04:12:44,681 - INFO - 输出目录已创建: evaluation_results
+2025-05-27 04:12:44,685 - ERROR - 加载真实评分数据失败: invalid literal for int() with base 10: 'policy/1841'

@@ -1,0 +1,92 @@
+2025-05-26 05:09:38,757 - INFO - 日志文件已创建: logs/api_inference_20250526_050938.log
+2025-05-26 05:09:38,757 - INFO - 
+=== 初始化政策评分器 ===
+2025-05-26 05:09:38,757 - INFO - 
+1. 初始化API客户端...
+2025-05-26 05:09:38,797 - INFO - API客户端初始化完成，使用模型: deepseek-chat
+2025-05-26 05:09:38,798 - INFO - 输出目录已创建: evaluation_results
+2025-05-26 05:09:38,798 - INFO - 
+=== 开始处理政策 ===
+2025-05-26 05:09:38,798 - INFO - 找到 1 个提示文件
+2025-05-26 05:09:38,812 - INFO - 
+处理文件: prompt_policy_1841.txt
+2025-05-26 05:09:38,812 - INFO - 
+=== 评分政策 ===
+2025-05-26 05:09:38,812 - INFO - 调用API...
+2025-05-26 05:10:13,274 - INFO - 成功获取API响应
+2025-05-26 05:10:13,274 - INFO - 
+=== 提取JSON响应 ===
+2025-05-26 05:10:13,274 - INFO - 成功提取JSON字符串
+2025-05-26 05:10:13,274 - INFO - 提取的JSON字符串: {
+  "Score": 3,
+  "Confidence": 9,
+  "Explanation": {
+    "Legal_Language": "The policy uses binding terms like 'shall' and 'is required to', indicating mandatory action.",
+    "Source_of_Authority": "Stems from a regulatory framework (implied by 'Public Utilities Commission' enforcement).",
+    "Enforcement_Mechanism": "Explicit penalties and annual audits ensure compliance.",
+    "Obligations": "Electric utilities are legally obligated to meet renewable procurement targets.",
+    "Optionality_or_Incentives": "No incentives—strict mandate with penalties for non-compliance."
+  },
+  "Inference_Chain": [
+    "Step 1: Direct analysis of the current policy shows binding terms ('shall', 'is required to') and regulatory authority.",
+    "Step 2: Retrieved 'Density and Missing Middle Housing Requirements' (sim=1.00, Score 3) has similar mandatory language and enforcement implications.",
+    "Step 3: Retrieved 'ZE and Plug-in Hybrid Light-Duty Fleet Purchase Goal' (sim=0.45, Score 2) uses conditional language ('where practicable'), unlike the current policy.",
+    "Step 4: Current policy aligns more with 'Density and Missing Middle Housing Requirements' due to its unambiguous mandatory structure.",
+    "Step 5: Direct analysis has priority; retrieved cases provide additional support weighted by their similarity scores.",
+    "Step 6: Final judgment: Score 3, Confidence 9."
+  ],
+  "Comparable_Cases": [
+    {
+      "Policy_ID": "policy/1841",
+      "Case_Name": "Density and Missing Middle Housing Requirements",
+      "Score": 3,
+      "Reason": "Both policies use mandatory language ('requires', 'shall') and impose enforceable obligations without discretionary opt-outs."
+    },
+    {
+      "Policy_ID": "policy/1095",
+      "Case_Name": "ZE and Plug-in Hybrid Light-Duty Fleet Purchase Goal",
+      "Score": 2,
+      "Reason": "This case contrasts with the current policy by using conditional language ('where practicable'), highlighting the current policy's stronger bindingness."
+    }
+  ]
+}
+2025-05-26 05:10:13,275 - INFO - 成功解析JSON
+2025-05-26 05:10:13,275 - INFO - 解析后的JSON对象: {
+  "Score": 3,
+  "Confidence": 9,
+  "Explanation": {
+    "Legal_Language": "The policy uses binding terms like 'shall' and 'is required to', indicating mandatory action.",
+    "Source_of_Authority": "Stems from a regulatory framework (implied by 'Public Utilities Commission' enforcement).",
+    "Enforcement_Mechanism": "Explicit penalties and annual audits ensure compliance.",
+    "Obligations": "Electric utilities are legally obligated to meet renewable procurement targets.",
+    "Optionality_or_Incentives": "No incentives—strict mandate with penalties for non-compliance."
+  },
+  "Inference_Chain": [
+    "Step 1: Direct analysis of the current policy shows binding terms ('shall', 'is required to') and regulatory authority.",
+    "Step 2: Retrieved 'Density and Missing Middle Housing Requirements' (sim=1.00, Score 3) has similar mandatory language and enforcement implications.",
+    "Step 3: Retrieved 'ZE and Plug-in Hybrid Light-Duty Fleet Purchase Goal' (sim=0.45, Score 2) uses conditional language ('where practicable'), unlike the current policy.",
+    "Step 4: Current policy aligns more with 'Density and Missing Middle Housing Requirements' due to its unambiguous mandatory structure.",
+    "Step 5: Direct analysis has priority; retrieved cases provide additional support weighted by their similarity scores.",
+    "Step 6: Final judgment: Score 3, Confidence 9."
+  ],
+  "Comparable_Cases": [
+    {
+      "Policy_ID": "policy/1841",
+      "Case_Name": "Density and Missing Middle Housing Requirements",
+      "Score": 3,
+      "Reason": "Both policies use mandatory language ('requires', 'shall') and impose enforceable obligations without discretionary opt-outs."
+    },
+    {
+      "Policy_ID": "policy/1095",
+      "Case_Name": "ZE and Plug-in Hybrid Light-Duty Fleet Purchase Goal",
+      "Score": 2,
+      "Reason": "This case contrasts with the current policy by using conditional language ('where practicable'), highlighting the current policy's stronger bindingness."
+    }
+  ]
+}
+2025-05-26 05:10:13,275 - INFO - Comparable_Cases当前类型: <class 'list'>
+2025-05-26 05:10:13,275 - INFO - Comparable_Cases当前值: [{'Policy_ID': 'policy/1841', 'Case_Name': 'Density and Missing Middle Housing Requirements', 'Score': 3, 'Reason': "Both policies use mandatory language ('requires', 'shall') and impose enforceable obligations without discretionary opt-outs."}, {'Policy_ID': 'policy/1095', 'Case_Name': 'ZE and Plug-in Hybrid Light-Duty Fleet Purchase Goal', 'Score': 2, 'Reason': "This case contrasts with the current policy by using conditional language ('where practicable'), highlighting the current policy's stronger bindingness."}]
+2025-05-26 05:10:13,275 - ERROR - Comparable_Cases必须是字典类型，当前类型: <class 'list'>
+2025-05-26 05:10:13,275 - ERROR - 无法提取有效的JSON响应
+2025-05-26 05:10:13,275 - ERROR - 无法评分政策: prompt_policy_1841.txt
+2025-05-26 05:10:13,276 - ERROR - 没有成功处理任何政策

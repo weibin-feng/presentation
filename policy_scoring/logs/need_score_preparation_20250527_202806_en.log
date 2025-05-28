@@ -1,0 +1,45 @@
+2025-05-27 20:28:06,858 - INFO - Log file created: policy_scoring/logs/need_score_preparation_20250527_202806.log
+2025-05-27 20:28:06,858 - INFO - Initializing text encoder...
+2025-05-27 20:28:08,769 - INFO - Loading reference data: policy_scoring/policy_score.xlsx
+2025-05-27 20:28:09,937 - INFO - Loading target data: policy_scoring/need_score.xlsx
+2025-05-27 20:28:09,986 - INFO - 
+Reference data: 30 records
+2025-05-27 20:28:09,988 - INFO - Reference data score distribution:
+2025-05-27 20:28:09,988 - INFO - Score 1: 6 records (20.0%)
+2025-05-27 20:28:09,989 - INFO - Score 2: 11 records (36.7%)
+2025-05-27 20:28:09,989 - INFO - Score 3: 13 records (43.3%)
+2025-05-27 20:28:09,989 - INFO - 
+Target data: 846 records
+2025-05-27 20:28:09,989 - INFO - Creating text embeddings...
+2025-05-27 20:28:09,989 - INFO - Number of texts: 30
+2025-05-27 20:28:09,989 - INFO - Starting embedding generation...
+2025-05-27 20:28:09,989 - INFO - Processing batch 1, containing 30 texts
+2025-05-27 20:28:11,085 - INFO - Embedding generation complete, type: <class 'numpy.ndarray'>
+2025-05-27 20:28:11,085 - INFO - Converting vectors to float32 type...
+2025-05-27 20:28:11,085 - INFO - Successfully created 30 embedding vectors, shape: (30, 768)
+2025-05-27 20:28:11,085 - INFO - Creating text embeddings...
+2025-05-27 20:28:11,085 - INFO - Number of texts: 846
+2025-05-27 20:28:11,086 - INFO - Starting embedding generation...
+2025-05-27 20:28:11,086 - INFO - Processing batch 1, containing 100 texts
+2025-05-27 20:28:12,753 - INFO - Processing batch 2, containing 100 texts
+2025-05-27 20:28:14,786 - INFO - Processing batch 3, containing 100 texts
+2025-05-27 20:28:16,189 - INFO - Processing batch 4, containing 100 texts
+2025-05-27 20:28:17,877 - INFO - Processing batch 5, containing 100 texts
+2025-05-27 20:28:19,123 - INFO - Processing batch 6, containing 100 texts
+2025-05-27 20:28:20,526 - INFO - Processing batch 7, containing 100 texts
+2025-05-27 20:28:21,854 - INFO - Processing batch 8, containing 100 texts
+2025-05-27 20:28:23,325 - INFO - Processing batch 9, containing 46 texts
+2025-05-27 20:28:24,073 - INFO - Embedding generation complete, type: <class 'numpy.ndarray'>
+2025-05-27 20:28:24,073 - INFO - Converting vectors to float32 type...
+2025-05-27 20:28:24,074 - INFO - Successfully created 846 embedding vectors, shape: (846, 768)
+2025-05-27 20:28:24,486 - INFO - Creating FAISS index...
+2025-05-27 20:28:24,486 - INFO - embeddings type: <class 'numpy.ndarray'>
+2025-05-27 20:28:24,486 - INFO - embeddings shape: (30, 768)
+2025-05-27 20:28:24,486 - INFO - Vectors converted to float32 type
+2025-05-27 20:28:24,487 - INFO - Vectors L2 normalized
+2025-05-27 20:28:24,487 - INFO - Vector dimension: 768
+2025-05-27 20:28:24,487 - INFO - FAISS index created
+2025-05-27 20:28:24,488 - INFO - Vectors added to index
+2025-05-27 20:28:24,490 - INFO - FAISS index saved to: policy_scoring/need_score_processed/faiss_index.index
+2025-05-27 20:28:24,491 - INFO - 
+Data processing complete

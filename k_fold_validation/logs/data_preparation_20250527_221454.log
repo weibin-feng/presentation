@@ -1,0 +1,4 @@
+2025-05-27 22:14:54,475 - INFO - Log file created: /Users/bu24999/Desktop/yini/k_fold_validation/logs/data_preparation_20250527_221454.log
+2025-05-27 22:14:54,475 - INFO - Initializing text encoder...
+2025-05-27 22:14:58,115 - INFO - Loading data: policy score.xlsx
+2025-05-27 22:14:58,117 - ERROR - Error during data processing: [Errno 2] No such file or directory: 'policy score.xlsx'

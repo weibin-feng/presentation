@@ -1,0 +1,128 @@
+2025-05-27 22:17:17,080 - INFO - Log file created: /Users/bu24999/Desktop/yini/k_fold_validation/logs/rag_prompt_builder_20250527_221717.log
+2025-05-27 22:17:17,080 - INFO - 
+=== Initializing RAG Prompt Builder ===
+2025-05-27 22:17:17,080 - INFO - 
+1. Initializing text encoder...
+2025-05-27 22:17:19,214 - INFO - Text encoder initialization completed
+2025-05-27 22:17:19,215 - INFO - 
+2. Loading data...
+2025-05-27 22:17:19,222 - INFO - Successfully loaded 30 items
+2025-05-27 22:17:19,222 - INFO - 
+3. Loading FAISS index (fold 3)...
+2025-05-27 22:17:19,223 - INFO - FAISS index loaded successfully
+2025-05-27 22:17:19,223 - INFO - 
+4. Preparing data split (fold 3)...
+2025-05-27 22:17:19,228 - INFO - Training set: 24 items
+2025-05-27 22:17:19,228 - INFO - Test set: 6 items
+2025-05-27 22:17:19,228 - INFO - 
+=== Getting similar cases ===
+2025-05-27 22:17:19,228 - INFO - Encoding target policy...
+2025-05-27 22:17:19,310 - INFO - Found similar case 1: policy/1893 (similarity: 0.5813)
+2025-05-27 22:17:19,310 - INFO - Found similar case 2: policy/247 (similarity: 0.5580)
+2025-05-27 22:17:19,311 - INFO - 
+=== Building prompt ===
+2025-05-27 22:17:19,311 - INFO - Prompt built successfully
+2025-05-27 22:17:19,312 - INFO - 
+=== Getting similar cases ===
+2025-05-27 22:17:19,312 - INFO - Encoding target policy...
+2025-05-27 22:17:19,388 - INFO - Found similar case 1: policy/200 (similarity: 0.5972)
+2025-05-27 22:17:19,388 - INFO - Found similar case 2: policy/1369 (similarity: 0.5887)
+2025-05-27 22:17:19,388 - INFO - 
+=== Building prompt ===
+2025-05-27 22:17:19,388 - INFO - Prompt built successfully
+2025-05-27 22:17:19,389 - INFO - 
+=== Getting similar cases ===
+2025-05-27 22:17:19,389 - INFO - Encoding target policy...
+2025-05-27 22:17:19,469 - INFO - Found similar case 1: policy/1208 (similarity: 0.6447)
+2025-05-27 22:17:19,469 - INFO - Found similar case 2: policy/718 (similarity: 0.6065)
+2025-05-27 22:17:19,469 - INFO - 
+=== Building prompt ===
+2025-05-27 22:17:19,469 - INFO - Prompt built successfully
+2025-05-27 22:17:19,470 - INFO - 
+=== Getting similar cases ===
+2025-05-27 22:17:19,470 - INFO - Encoding target policy...
+2025-05-27 22:17:19,534 - INFO - Found similar case 1: policy/1016 (similarity: 0.5151)
+2025-05-27 22:17:19,534 - INFO - Found similar case 2: policy/1007 (similarity: 0.4684)
+2025-05-27 22:17:19,534 - INFO - 
+=== Building prompt ===
+2025-05-27 22:17:19,534 - INFO - Prompt built successfully
+2025-05-27 22:17:19,535 - INFO - 
+=== Getting similar cases ===
+2025-05-27 22:17:19,535 - INFO - Encoding target policy...
+2025-05-27 22:17:19,719 - INFO - Found similar case 1: policy/476 (similarity: 0.6400)
+2025-05-27 22:17:19,719 - INFO - Found similar case 2: policy/246 (similarity: 0.5665)
+2025-05-27 22:17:19,719 - INFO - 
+=== Building prompt ===
+2025-05-27 22:17:19,720 - INFO - Prompt built successfully
+2025-05-27 22:17:19,720 - INFO - 
+=== Getting similar cases ===
+2025-05-27 22:17:19,720 - INFO - Encoding target policy...
+2025-05-27 22:17:19,784 - INFO - Found similar case 1: policy/1369 (similarity: 0.5629)
+2025-05-27 22:17:19,784 - INFO - Found similar case 2: policy/1893 (similarity: 0.5088)
+2025-05-27 22:17:19,784 - INFO - 
+=== Building prompt ===
+2025-05-27 22:17:19,784 - INFO - Prompt built successfully
+2025-05-27 22:17:19,786 - INFO - Log file created: /Users/bu24999/Desktop/yini/k_fold_validation/logs/rag_prompt_builder_20250527_221719.log
+2025-05-27 22:17:19,786 - INFO - 
+=== Initializing RAG Prompt Builder ===
+2025-05-27 22:17:19,786 - INFO - 
+1. Initializing text encoder...
+2025-05-27 22:17:21,398 - INFO - Text encoder initialization completed
+2025-05-27 22:17:21,398 - INFO - 
+2. Loading data...
+2025-05-27 22:17:21,402 - INFO - Successfully loaded 30 items
+2025-05-27 22:17:21,402 - INFO - 
+3. Loading FAISS index (fold 4)...
+2025-05-27 22:17:21,403 - INFO - FAISS index loaded successfully
+2025-05-27 22:17:21,403 - INFO - 
+4. Preparing data split (fold 4)...
+2025-05-27 22:17:21,404 - INFO - Training set: 24 items
+2025-05-27 22:17:21,404 - INFO - Test set: 6 items
+2025-05-27 22:17:21,404 - INFO - 
+=== Getting similar cases ===
+2025-05-27 22:17:21,404 - INFO - Encoding target policy...
+2025-05-27 22:17:21,477 - INFO - Found similar case 1: policy/1259 (similarity: 0.5651)
+2025-05-27 22:17:21,477 - INFO - Found similar case 2: policy/1007 (similarity: 0.4390)
+2025-05-27 22:17:21,477 - INFO - 
+=== Building prompt ===
+2025-05-27 22:17:21,477 - INFO - Prompt built successfully
+2025-05-27 22:17:21,478 - INFO - 
+=== Getting similar cases ===
+2025-05-27 22:17:21,478 - INFO - Encoding target policy...
+2025-05-27 22:17:21,550 - INFO - Found similar case 1: policy/2188 (similarity: 0.6363)
+2025-05-27 22:17:21,551 - INFO - Found similar case 2: policy/1844 (similarity: 0.5813)
+2025-05-27 22:17:21,551 - INFO - 
+=== Building prompt ===
+2025-05-27 22:17:21,551 - INFO - Prompt built successfully
+2025-05-27 22:17:21,552 - INFO - 
+=== Getting similar cases ===
+2025-05-27 22:17:21,552 - INFO - Encoding target policy...
+2025-05-27 22:17:21,631 - INFO - Found similar case 1: policy/1999 (similarity: 0.5662)
+2025-05-27 22:17:21,631 - INFO - Found similar case 2: policy/631 (similarity: 0.5132)
+2025-05-27 22:17:21,631 - INFO - 
+=== Building prompt ===
+2025-05-27 22:17:21,631 - INFO - Prompt built successfully
+2025-05-27 22:17:21,632 - INFO - 
+=== Getting similar cases ===
+2025-05-27 22:17:21,632 - INFO - Encoding target policy...
+2025-05-27 22:17:21,706 - INFO - Found similar case 1: policy/247 (similarity: 0.6279)
+2025-05-27 22:17:21,707 - INFO - Found similar case 2: policy/1082 (similarity: 0.6063)
+2025-05-27 22:17:21,707 - INFO - 
+=== Building prompt ===
+2025-05-27 22:17:21,707 - INFO - Prompt built successfully
+2025-05-27 22:17:21,708 - INFO - 
+=== Getting similar cases ===
+2025-05-27 22:17:21,708 - INFO - Encoding target policy...
+2025-05-27 22:17:21,774 - INFO - Found similar case 1: policy/1016 (similarity: 0.6371)
+2025-05-27 22:17:21,774 - INFO - Found similar case 2: policy/476 (similarity: 0.6266)
+2025-05-27 22:17:21,775 - INFO - 
+=== Building prompt ===
+2025-05-27 22:17:21,775 - INFO - Prompt built successfully
+2025-05-27 22:17:21,775 - INFO - 
+=== Getting similar cases ===
+2025-05-27 22:17:21,776 - INFO - Encoding target policy...
+2025-05-27 22:17:21,788 - INFO - Found similar case 1: policy/444 (similarity: 0.4521)
+2025-05-27 22:17:21,788 - INFO - Found similar case 2: policy/1208 (similarity: 0.3405)
+2025-05-27 22:17:21,788 - INFO - 
+=== Building prompt ===
+2025-05-27 22:17:21,788 - INFO - Prompt built successfully

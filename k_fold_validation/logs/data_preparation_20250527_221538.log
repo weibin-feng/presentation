@@ -1,0 +1,85 @@
+2025-05-27 22:15:38,623 - INFO - Log file created: /Users/bu24999/Desktop/yini/k_fold_validation/logs/data_preparation_20250527_221538.log
+2025-05-27 22:15:38,623 - INFO - Initializing text encoder...
+2025-05-27 22:15:40,560 - INFO - Loading data: /Users/bu24999/Desktop/yini/k_fold_validation/policy score.xlsx
+2025-05-27 22:15:41,709 - INFO - 
+Original data score distribution:
+2025-05-27 22:15:41,710 - INFO - Score 1: 6 items (20.0%)
+2025-05-27 22:15:41,710 - INFO - Score 2: 11 items (36.7%)
+2025-05-27 22:15:41,710 - INFO - Score 3: 13 items (43.3%)
+2025-05-27 22:15:41,710 - INFO - Successfully loaded 30 items
+2025-05-27 22:15:41,710 - INFO - Creating text embeddings...
+2025-05-27 22:15:42,939 - INFO - Successfully created 30 embedding vectors
+2025-05-27 22:15:42,939 - INFO - 
+Creating 5-fold stratified splits...
+2025-05-27 22:15:42,941 - INFO - 
+Fold 1 distribution:
+2025-05-27 22:15:42,941 - INFO - Training set:
+2025-05-27 22:15:42,941 - INFO -   Score 1: 5 items (20.8%)
+2025-05-27 22:15:42,941 - INFO -   Score 2: 9 items (37.5%)
+2025-05-27 22:15:42,941 - INFO -   Score 3: 10 items (41.7%)
+2025-05-27 22:15:42,941 - INFO - Test set:
+2025-05-27 22:15:42,941 - INFO -   Score 1: 1 items (16.7%)
+2025-05-27 22:15:42,941 - INFO -   Score 2: 2 items (33.3%)
+2025-05-27 22:15:42,941 - INFO -   Score 3: 3 items (50.0%)
+2025-05-27 22:15:42,942 - INFO - 
+Fold 2 distribution:
+2025-05-27 22:15:42,942 - INFO - Training set:
+2025-05-27 22:15:42,942 - INFO -   Score 1: 5 items (20.8%)
+2025-05-27 22:15:42,942 - INFO -   Score 2: 9 items (37.5%)
+2025-05-27 22:15:42,942 - INFO -   Score 3: 10 items (41.7%)
+2025-05-27 22:15:42,942 - INFO - Test set:
+2025-05-27 22:15:42,942 - INFO -   Score 1: 1 items (16.7%)
+2025-05-27 22:15:42,942 - INFO -   Score 2: 2 items (33.3%)
+2025-05-27 22:15:42,942 - INFO -   Score 3: 3 items (50.0%)
+2025-05-27 22:15:42,942 - INFO - 
+Fold 3 distribution:
+2025-05-27 22:15:42,942 - INFO - Training set:
+2025-05-27 22:15:42,942 - INFO -   Score 1: 5 items (20.8%)
+2025-05-27 22:15:42,942 - INFO -   Score 2: 9 items (37.5%)
+2025-05-27 22:15:42,942 - INFO -   Score 3: 10 items (41.7%)
+2025-05-27 22:15:42,942 - INFO - Test set:
+2025-05-27 22:15:42,942 - INFO -   Score 1: 1 items (16.7%)
+2025-05-27 22:15:42,942 - INFO -   Score 2: 2 items (33.3%)
+2025-05-27 22:15:42,943 - INFO -   Score 3: 3 items (50.0%)
+2025-05-27 22:15:42,943 - INFO - 
+Fold 4 distribution:
+2025-05-27 22:15:42,943 - INFO - Training set:
+2025-05-27 22:15:42,943 - INFO -   Score 1: 5 items (20.8%)
+2025-05-27 22:15:42,943 - INFO -   Score 2: 8 items (33.3%)
+2025-05-27 22:15:42,943 - INFO -   Score 3: 11 items (45.8%)
+2025-05-27 22:15:42,943 - INFO - Test set:
+2025-05-27 22:15:42,943 - INFO -   Score 1: 1 items (16.7%)
+2025-05-27 22:15:42,943 - INFO -   Score 2: 3 items (50.0%)
+2025-05-27 22:15:42,943 - INFO -   Score 3: 2 items (33.3%)
+2025-05-27 22:15:42,943 - INFO - 
+Fold 5 distribution:
+2025-05-27 22:15:42,943 - INFO - Training set:
+2025-05-27 22:15:42,943 - INFO -   Score 1: 4 items (16.7%)
+2025-05-27 22:15:42,943 - INFO -   Score 2: 9 items (37.5%)
+2025-05-27 22:15:42,943 - INFO -   Score 3: 11 items (45.8%)
+2025-05-27 22:15:42,943 - INFO - Test set:
+2025-05-27 22:15:42,943 - INFO -   Score 1: 2 items (33.3%)
+2025-05-27 22:15:42,944 - INFO -   Score 2: 2 items (33.3%)
+2025-05-27 22:15:42,944 - INFO -   Score 3: 2 items (33.3%)
+2025-05-27 22:15:42,944 - INFO - 
+Overall distribution:
+2025-05-27 22:15:42,944 - INFO - Total training set:
+2025-05-27 22:15:42,944 - INFO -   Score 1: 24 items (100.0%)
+2025-05-27 22:15:42,944 - INFO -   Score 2: 44 items (183.3%)
+2025-05-27 22:15:42,944 - INFO -   Score 3: 52 items (216.7%)
+2025-05-27 22:15:42,944 - INFO - Total test set:
+2025-05-27 22:15:42,944 - INFO -   Score 1: 6 items (100.0%)
+2025-05-27 22:15:42,944 - INFO -   Score 2: 11 items (183.3%)
+2025-05-27 22:15:42,944 - INFO -   Score 3: 13 items (216.7%)
+2025-05-27 22:15:42,968 - INFO - Creating FAISS index for fold 1...
+2025-05-27 22:15:42,971 - INFO - FAISS index saved to: /Users/bu24999/Desktop/yini/k_fold_validation/processed_data/faiss_index_fold_0.index
+2025-05-27 22:15:42,971 - INFO - Creating FAISS index for fold 2...
+2025-05-27 22:15:42,972 - INFO - FAISS index saved to: /Users/bu24999/Desktop/yini/k_fold_validation/processed_data/faiss_index_fold_1.index
+2025-05-27 22:15:42,972 - INFO - Creating FAISS index for fold 3...
+2025-05-27 22:15:42,973 - INFO - FAISS index saved to: /Users/bu24999/Desktop/yini/k_fold_validation/processed_data/faiss_index_fold_2.index
+2025-05-27 22:15:42,973 - INFO - Creating FAISS index for fold 4...
+2025-05-27 22:15:42,973 - INFO - FAISS index saved to: /Users/bu24999/Desktop/yini/k_fold_validation/processed_data/faiss_index_fold_3.index
+2025-05-27 22:15:42,973 - INFO - Creating FAISS index for fold 5...
+2025-05-27 22:15:42,974 - INFO - FAISS index saved to: /Users/bu24999/Desktop/yini/k_fold_validation/processed_data/faiss_index_fold_4.index
+2025-05-27 22:15:42,974 - INFO - 
+Data processing completed

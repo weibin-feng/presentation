@@ -1,0 +1,174 @@
+You are an expert legal-policy analyst evaluating the **bindingness** of climate or environmental policies. Your task is to assess how legally enforceable and compulsory a given policy is. You must follow a structured, multi-step reasoning approach before assigning a final score.
+
+---
+
+Objective:
+Classify the policy into one of three **bindingness scores**, based on your direct evaluation, dimension-by-dimension reasoning, and reference to comparable cases.
+
+
+---
+
+### Scoring Categories:
+
+- **Score 1: Non-binding**
+  - Aspirational or informational policies with no legal force, obligations, or incentives.
+  - Often appear as reports, plans, advisory boards, or descriptive indexes.
+  - **Common keywords**: may, encourage, develop, planning goals
+
+- **Score 2: Voluntary or Incentivized**
+  - Policies that are **not mandatory**, but include **explicit mechanisms to promote participation**, such as grants, match funding, or conditional eligibility.
+  - These policies **encourage action** through incentives or optional compliance paths, even if not legally required.
+  - Distinct from Score 1: Score 2 policies are **meant to drive change** through material or procedural benefits, **not just provide information**.
+  - **Common cues**: offer, grant program, funding available, match funds, eligibility requirement, conditional compliance (e.g., "where practicable")
+  
+- **Score 3: Mandatory**
+  - Legally binding measures from statute, regulation, or executive order with enforceable obligations.
+  - May include penalties, reporting deadlines, or regulatory consequences.
+  - **Common keywords**: must, shall, is required to, mandate, penalty, enforce
+
+---
+
+### Evaluation Dimensions (Used for Explanation):
+
+For each of the five dimensions, answer both components:
+
+1. **Legal_Language**  
+   - Does the policy use binding terms like **"shall," "must," "is required to"**?  
+   - Or does it use non-binding terms like **"may," "encourage," "help," "support," "goal"**?
+
+2. **Source_of_Authority**  
+   - Is it based on **statute, regulation, executive order** (binding)?  
+   - Or is it a **plan, agency report, funding mechanism, task force, or advisory program** (non-binding)?
+
+3. **Enforcement_Mechanism**  
+   - Are there **penalties, reporting requirements, or compliance deadlines**?  
+   - Or is it **aspirational** with **no consequence** for failure to comply?
+
+4. **Obligations**  
+   - Who is obligated to act?  
+   - Are responsibilities assigned and legally enforceable, or **left to discretion**?
+
+5. **Optionality_or_Incentives**  
+   - Does the policy offer **grants, rebates, tax credits**, or **non-compulsory incentives** to encourage action?
+
+
+### Step-by-step Procedure:
+
+1. **Analyze the Current Policy**
+   - Examine each of the five dimensions.
+   - Describe what is directly observed in the policy language and structure.
+
+2. **Retrieve and Compare Similar Cases**
+   - Review the two retrieved cases below.
+   - Compare their language, structure, and bindingness to the current policy.
+
+3. **Synthesize and Resolve**
+   - Discuss agreement or divergence between direct analysis and retrieved cases.
+   - Highlight any ambiguous elements or borderline scores.
+
+4. **Assign Final Score and Confidence**
+   - Score: - You should assign the final score based primarily on your direct analysis. Retrieved cases serve as contextual benchmarks.
+   - Confidence (0–10): High = strong signals; Medium = partial alignment; Low = ambiguous.
+
+---
+
+### Current Policy for Evaluation:
+
+Policy ID: policy/2174  
+Policy Name: Vermont Social Vulnerability Index  
+Type: Analysis and Tools  
+Description:  
+The Vermont Social Vulnerability Index shows the number of vulnerability measures above the 90th percentile for Vermont census tracts. For each of the vulnerability measures, census tracts in the 90th percentile of vulnerability were assigned a flag. This SVI exhibits the sum of all flags for each census tract. There are a total of 16 measures in the SVI.
+
+---
+
+### Retrieved Reference Cases:
+
+Below are the **two most semantically similar reference policies**, retrieved using a language model encoder.  
+They are not labeled as "similar" or "contrasting" — both are provided to support your reasoning.
+
+You should **prioritize direct analysis** of the current policy, using these cases as comparative reference points only.
+
+
+
+
+Case 1:
+Similarity: 0.45
+Policy ID: policy/444
+Name: Disadvantaged Communities Definition
+Score: 1
+Type: Analysis and Tools
+Description: Defines 'disadvantaged communities'
+
+Explanation: Legal Language: The policy uses descriptive language ("defines") without mandatory terms (e.g., "shall," "must") or voluntary incentives. It functions as a conceptual framework, not a directive.
+Source of Authority: Likely established as an administrative or regulatory definition (e.g., under state environmental justice laws), but the definition itself lacks independent legal authority to compel action.
+Enforcement Mechanism: No enforcement tools (e.g., penalties, compliance requirements) are tied to the definition. Its purpose is informational, not regulatory.
+Obligations: No legal obligations are imposed by the definition alone. Compliance depends on how the definition is applied in other policies (e.g., grant eligibility, regulatory thresholds).
+Optionality/Incentives: The definition does not inherently incentivize or penalize entities. Its impact is contingent on integration into binding programs or laws.
+
+
+Case 2:
+Similarity: 0.34
+Policy ID: policy/1208
+Name: Justice Forty Oversight Committee
+Score: 1
+Type: Governance
+Description: Justice Forty Oversight Committee to study and make findings and recommendations regarding environmental justice in this State. And to “locate and help organize disadvantaged communities” so that they can benefit from federal grants, loans and investments.
+
+Explanation: Legal Language: The policy uses non-binding terms such as "study," "make findings and recommendations," and "help organize." These indicate advisory or facilitative roles without enforceable mandates (e.g., no "shall" or "must").
+Source of Authority: Likely established through executive or administrative action (not codified in law), given the lack of reference to statutory authority. The committee’s role is advisory, not regulatory.
+Enforcement Mechanism: No penalties, compliance deadlines, or oversight tools are mentioned. The committee cannot compel action or enforce its recommendations.
+Obligations: The committee’s work is limited to studying issues and assisting communities in accessing federal funds. External actors are not legally obligated to follow its guidance or participate in its programs.
+Optionality/Incentives: Participation by communities is voluntary. While federal grants and loans act as incentives, the committee itself has no authority to mandate or condition access to these funds.
+
+---
+
+
+            
+### Final Output Format (JSON Only):
+
+{
+  "Score": <1 | 2 | 3>, 
+  "Confidence": <0–10>, 
+  "Explanation": {
+    "Legal_Language": "Explain what kind of language the current policy uses (e.g., 'shall', 'may', 'encourage').",
+    "Source_of_Authority": "Explain whether this policy stems from law, regulation, or advisory source.",
+    "Enforcement_Mechanism": "Explain if there are penalties, deadlines, or if it is purely aspirational.",
+    "Obligations": "Explain who is required to act, and whether responsibilities are enforceable.",
+    "Optionality_or_Incentives": "Explain whether the policy provides incentives or is fully mandatory."
+  },
+  "Inference_Chain": [
+    "Step 1: Direct analysis of the current policy shows <binding/non-binding> terms ('<term>') and <source of authority>.",
+    "Step 2: Retrieved <CASE_A_Name> (sim=<CASE_A_Similarity>, Score <CASE_A_Score>) has similar features.",
+    "Step 3: Retrieved <CASE_B_Name> (sim=<CASE_B_Similarity>, Score <CASE_B_Score>) shares some elements but lacks <feature>.",
+    "Step 4: Current policy aligns more with <CASE_A_Name> due to <reason>.",
+    "Step 5: Direct analysis has priority; retrieved cases provide additional support weighted by their similarity scores.",
+    "Step 6: Final judgment: Score <Final_Score>, Confidence <Confidence_Score>."
+  ],
+  "Comparable_Cases": [
+    {
+      "Policy_ID": "<CASE_1_ID>",
+      "Case_Name": "<CASE_1_NAME>",
+      "Score": <SCORE_1>,
+      "Reason": "Summarize why this case is highly similar and informative for the current policy evaluation."
+    },
+    {
+      "Policy_ID": "<CASE_2_ID>",
+      "Case_Name": "<CASE_2_NAME>",
+      "Score": <SCORE_2>,
+      "Reason": "Summarize why this case is also relevant and comparable to the current policy."
+    }
+  ]
+}
+
+Note: The above is a structural JSON template.
+
+You must:
+- Replace <...> placeholders with actual values from your analysis.
+- Derive both cases from the two retrieved examples.
+- These should be the top 2 most semantically similar reference policies.
+- Do not copy this template literally.
+
+---
+
+Please evaluate the bindingness of the current policy following the structured approach above.

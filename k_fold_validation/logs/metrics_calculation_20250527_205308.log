@@ -1,0 +1,33 @@
+2025-05-27 20:53:08,714 - INFO - Log file created: logs/metrics_calculation_20250527_205308.log
+2025-05-27 20:53:08,714 - INFO - 
+=== Initializing Metrics Calculator ===
+2025-05-27 20:53:08,714 - INFO - Output directory created: metrics_results
+2025-05-27 20:53:08,714 - INFO - 
+=== Starting Metrics Calculation ===
+2025-05-27 20:53:08,714 - INFO - Reading file: evaluation_results/policy_score_with_predictions_final_20250527_044812_revise.xlsx
+2025-05-27 20:53:08,907 - INFO - 
+Confusion Matrix:
+2025-05-27 20:53:08,907 - INFO - [[ 6  0  0]
+ [ 0 11  0]
+ [ 0  1 12]]
+2025-05-27 20:53:09,086 - INFO - 
+Classification Report:
+2025-05-27 20:53:09,088 - INFO -               precision    recall  f1-score   support
+
+           1       1.00      1.00      1.00         6
+           2       0.92      1.00      0.96        11
+           3       1.00      0.92      0.96        13
+
+    accuracy                           0.97        30
+   macro avg       0.97      0.97      0.97        30
+weighted avg       0.97      0.97      0.97        30
+
+2025-05-27 20:53:09,091 - INFO - 
+ROC AUC: 0.9784
+2025-05-27 20:53:09,139 - INFO - 
+Accuracy: 0.9667
+2025-05-27 20:53:09,139 - INFO - Weighted Precision: 0.9694
+2025-05-27 20:53:09,139 - INFO - Weighted Recall: 0.9667
+2025-05-27 20:53:09,139 - INFO - Weighted F1 Score: 0.9667
+2025-05-27 20:53:09,150 - INFO - 
+Results saved to: metrics_results/metrics_results_20250527_205309.xlsx

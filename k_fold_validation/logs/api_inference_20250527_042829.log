@@ -1,0 +1,241 @@
+2025-05-27 04:28:29,757 - INFO - 日志文件已创建: logs/api_inference_20250527_042829.log
+2025-05-27 04:28:29,757 - INFO - 
+=== 初始化政策评分器 ===
+2025-05-27 04:28:29,757 - INFO - 
+1. 初始化API客户端...
+2025-05-27 04:28:29,797 - INFO - API客户端初始化完成，使用模型: deepseek-chat
+2025-05-27 04:28:29,797 - INFO - 输出目录已创建: evaluation_results
+2025-05-27 04:28:29,797 - INFO - 
+=== 开始处理政策 ===
+2025-05-27 04:28:29,797 - INFO - 找到 30 个提示文件
+2025-05-27 04:28:29,912 - INFO - 
+处理文件: prompt_fold_1_policy_718.txt
+2025-05-27 04:28:29,913 - INFO - 
+=== 评分政策 ===
+2025-05-27 04:28:29,913 - INFO - 调用API...
+2025-05-27 04:29:00,112 - INFO - 成功获取API响应
+2025-05-27 04:29:00,113 - INFO - 
+=== 提取JSON响应 ===
+2025-05-27 04:29:00,113 - INFO - 成功提取JSON字符串
+2025-05-27 04:29:00,113 - INFO - 提取的JSON字符串: {
+  "Score": 3,
+  "Confidence": 8,
+  "Explanation": {
+    "Legal_Language": "The policy uses binding terms such as 'shall' (e.g., 'The Department of General Services shall leverage its management...', 'the Department of General Services shall: c. Reduce greenhouse gas emissions...').",
+    "Source_of_Authority": "The policy appears to stem from a legal or regulatory source, given the mandatory language and specific obligations assigned to the Department of General Services.",
+    "Enforcement_Mechanism": "While explicit penalties are not mentioned, the use of 'shall' implies enforceable obligations, and the specificity of the tasks suggests accountability mechanisms may exist.",
+    "Obligations": "The Department of General Services is clearly obligated to act, with specific responsibilities outlined (e.g., reducing greenhouse gas emissions, managing energy demand). These responsibilities appear legally enforceable.",
+    "Optionality_or_Incentives": "The policy does not mention any incentives or voluntary mechanisms; it appears to be fully mandatory for the Department of General Services."
+  },
+  "Inference_Chain": [
+    "Step 1: Direct analysis of the current policy shows binding terms ('shall') and a likely regulatory source of authority.",
+    "Step 2: Retrieved 2015, 2025, 2030, 2050 Statewide GHG Targets (sim=0.64, Score 2) has similar features but uses non-binding 'goal' language.",
+    "Step 3: Retrieved Green and Healthy Task Force (sim=0.61, Score 3) shares mandatory language and obligations but focuses on a task force rather than a department.",
+    "Step 4: Current policy aligns more with Green and Healthy Task Force due to the use of mandatory language and specific obligations.",
+    "Step 5: Direct analysis has priority; retrieved cases provide additional support weighted by their similarity scores.",
+    "Step 6: Final judgment: Score 3, Confidence 8."
+  ],
+  "Comparable_Cases": [
+    {
+      "Policy_ID": "policy/1482",
+      "Case_Name": "2015, 2025, 2030, 2050 Statewide GHG Targets",
+      "Score": 2,
+      "Reason": "This case is informative as it contrasts with the current policy by using non-binding 'goal' language, highlighting the stronger bindingness of the current policy."
+    },
+    {
+      "Policy_ID": "policy/1580",
+      "Case_Name": "Green and Healthy Task Force",
+      "Score": 3,
+      "Reason": "This case is relevant as it shares the use of mandatory language ('shall') and specific obligations, supporting the classification of the current policy as mandatory."
+    }
+  ]
+}
+2025-05-27 04:29:00,113 - INFO - 成功解析JSON
+2025-05-27 04:29:00,114 - INFO - 解析后的JSON对象: {
+  "Score": 3,
+  "Confidence": 8,
+  "Explanation": {
+    "Legal_Language": "The policy uses binding terms such as 'shall' (e.g., 'The Department of General Services shall leverage its management...', 'the Department of General Services shall: c. Reduce greenhouse gas emissions...').",
+    "Source_of_Authority": "The policy appears to stem from a legal or regulatory source, given the mandatory language and specific obligations assigned to the Department of General Services.",
+    "Enforcement_Mechanism": "While explicit penalties are not mentioned, the use of 'shall' implies enforceable obligations, and the specificity of the tasks suggests accountability mechanisms may exist.",
+    "Obligations": "The Department of General Services is clearly obligated to act, with specific responsibilities outlined (e.g., reducing greenhouse gas emissions, managing energy demand). These responsibilities appear legally enforceable.",
+    "Optionality_or_Incentives": "The policy does not mention any incentives or voluntary mechanisms; it appears to be fully mandatory for the Department of General Services."
+  },
+  "Inference_Chain": [
+    "Step 1: Direct analysis of the current policy shows binding terms ('shall') and a likely regulatory source of authority.",
+    "Step 2: Retrieved 2015, 2025, 2030, 2050 Statewide GHG Targets (sim=0.64, Score 2) has similar features but uses non-binding 'goal' language.",
+    "Step 3: Retrieved Green and Healthy Task Force (sim=0.61, Score 3) shares mandatory language and obligations but focuses on a task force rather than a department.",
+    "Step 4: Current policy aligns more with Green and Healthy Task Force due to the use of mandatory language and specific obligations.",
+    "Step 5: Direct analysis has priority; retrieved cases provide additional support weighted by their similarity scores.",
+    "Step 6: Final judgment: Score 3, Confidence 8."
+  ],
+  "Comparable_Cases": [
+    {
+      "Policy_ID": "policy/1482",
+      "Case_Name": "2015, 2025, 2030, 2050 Statewide GHG Targets",
+      "Score": 2,
+      "Reason": "This case is informative as it contrasts with the current policy by using non-binding 'goal' language, highlighting the stronger bindingness of the current policy."
+    },
+    {
+      "Policy_ID": "policy/1580",
+      "Case_Name": "Green and Healthy Task Force",
+      "Score": 3,
+      "Reason": "This case is relevant as it shares the use of mandatory language ('shall') and specific obligations, supporting the classification of the current policy as mandatory."
+    }
+  ]
+}
+2025-05-27 04:29:00,114 - INFO - JSON响应验证通过
+2025-05-27 04:29:00,114 - INFO - 最终处理后的JSON对象: {
+  "Score": 3,
+  "Confidence": 8,
+  "Explanation": {
+    "Legal_Language": "The policy uses binding terms such as 'shall' (e.g., 'The Department of General Services shall leverage its management...', 'the Department of General Services shall: c. Reduce greenhouse gas emissions...').",
+    "Source_of_Authority": "The policy appears to stem from a legal or regulatory source, given the mandatory language and specific obligations assigned to the Department of General Services.",
+    "Enforcement_Mechanism": "While explicit penalties are not mentioned, the use of 'shall' implies enforceable obligations, and the specificity of the tasks suggests accountability mechanisms may exist.",
+    "Obligations": "The Department of General Services is clearly obligated to act, with specific responsibilities outlined (e.g., reducing greenhouse gas emissions, managing energy demand). These responsibilities appear legally enforceable.",
+    "Optionality_or_Incentives": "The policy does not mention any incentives or voluntary mechanisms; it appears to be fully mandatory for the Department of General Services."
+  },
+  "Inference_Chain": [
+    "Step 1: Direct analysis of the current policy shows binding terms ('shall') and a likely regulatory source of authority.",
+    "Step 2: Retrieved 2015, 2025, 2030, 2050 Statewide GHG Targets (sim=0.64, Score 2) has similar features but uses non-binding 'goal' language.",
+    "Step 3: Retrieved Green and Healthy Task Force (sim=0.61, Score 3) shares mandatory language and obligations but focuses on a task force rather than a department.",
+    "Step 4: Current policy aligns more with Green and Healthy Task Force due to the use of mandatory language and specific obligations.",
+    "Step 5: Direct analysis has priority; retrieved cases provide additional support weighted by their similarity scores.",
+    "Step 6: Final judgment: Score 3, Confidence 8."
+  ],
+  "Comparable_Cases": {
+    "similar_cases": [
+      {
+        "Policy_ID": "policy/1580",
+        "Case_Name": "Green and Healthy Task Force",
+        "Score": 3,
+        "Reason": "This case is relevant as it shares the use of mandatory language ('shall') and specific obligations, supporting the classification of the current policy as mandatory."
+      }
+    ],
+    "contrasting_cases": [
+      {
+        "Policy_ID": "policy/1482",
+        "Case_Name": "2015, 2025, 2030, 2050 Statewide GHG Targets",
+        "Score": 2,
+        "Reason": "This case is informative as it contrasts with the current policy by using non-binding 'goal' language, highlighting the stronger bindingness of the current policy."
+      }
+    ]
+  }
+}
+2025-05-27 04:29:00,114 - INFO - 评分结果: 3, 置信度: 8
+2025-05-27 04:29:00,116 - ERROR - 未找到政策ID: 1
+2025-05-27 04:29:01,122 - INFO - 
+处理文件: prompt_fold_4_policy_1369.txt
+2025-05-27 04:29:01,123 - INFO - 
+=== 评分政策 ===
+2025-05-27 04:29:01,124 - INFO - 调用API...
+2025-05-27 04:29:32,876 - INFO - 成功获取API响应
+2025-05-27 04:29:32,876 - INFO - 
+=== 提取JSON响应 ===
+2025-05-27 04:29:32,876 - INFO - 成功提取JSON字符串
+2025-05-27 04:29:32,877 - INFO - 提取的JSON字符串: {
+  "Score": 2,
+  "Confidence": 7,
+  "Explanation": {
+    "Legal_Language": "The policy uses non-binding terms such as 'providing', 'building upon', and 'implementing', which suggest encouragement rather than obligation. There are no terms like 'shall' or 'must' that indicate mandatory action.",
+    "Source_of_Authority": "The policy is described as a 'program' and a 'collaboration with the Colorado Interagency Climate Team', which suggests it is not based on statute, regulation, or executive order but rather on a cooperative initiative.",
+    "Enforcement_Mechanism": "There are no mentioned penalties, reporting requirements, or compliance deadlines. The policy appears to be aspirational with no consequences for non-compliance.",
+    "Obligations": "The policy describes activities that various entities 'may' undertake, such as local governments, nonprofits, and higher education institutions, but does not assign enforceable responsibilities.",
+    "Optionality_or_Incentives": "The policy seems to offer support and capacity-building for climate action plans and projects, which aligns with voluntary or incentivized actions rather than mandatory requirements."
+  },
+  "Inference_Chain": [
+    "Step 1: Direct analysis of the current policy shows non-binding terms ('providing', 'building upon', 'implementing') and a collaborative program as the source of authority.",
+    "Step 2: Retrieved Energy Code Board (sim=0.64, Score 3) has similar features in terms of addressing climate change but uses mandatory language and is based on statutory authority.",
+    "Step 3: Retrieved North Carolina Climate Change Interagency Council (sim=0.63, Score 3) shares some elements in terms of interagency collaboration but is based on an executive order with mandatory participation.",
+    "Step 4: Current policy aligns more with voluntary or incentivized programs due to its non-binding language and lack of enforcement mechanisms.",
+    "Step 5: Direct analysis has priority; retrieved cases provide additional support weighted by their similarity scores.",
+    "Step 6: Final judgment: Score 2, Confidence 7."
+  ],
+  "Comparable_Cases": [
+    {
+      "Policy_ID": "policy/1016",
+      "Case_Name": "Energy Code Board",
+      "Score": 3,
+      "Reason": "This case is informative as it represents a mandatory policy with clear legal language and enforcement mechanisms, contrasting with the current policy's voluntary nature."
+    },
+    {
+      "Policy_ID": "policy/476",
+      "Case_Name": "North Carolina Climate Change Interagency Council",
+      "Score": 3,
+      "Reason": "This case is relevant as it involves interagency collaboration like the current policy but is based on an executive order with compulsory participation, highlighting the current policy's lack of binding obligations."
+    }
+  ]
+}
+2025-05-27 04:29:32,877 - INFO - 成功解析JSON
+2025-05-27 04:29:32,877 - INFO - 解析后的JSON对象: {
+  "Score": 2,
+  "Confidence": 7,
+  "Explanation": {
+    "Legal_Language": "The policy uses non-binding terms such as 'providing', 'building upon', and 'implementing', which suggest encouragement rather than obligation. There are no terms like 'shall' or 'must' that indicate mandatory action.",
+    "Source_of_Authority": "The policy is described as a 'program' and a 'collaboration with the Colorado Interagency Climate Team', which suggests it is not based on statute, regulation, or executive order but rather on a cooperative initiative.",
+    "Enforcement_Mechanism": "There are no mentioned penalties, reporting requirements, or compliance deadlines. The policy appears to be aspirational with no consequences for non-compliance.",
+    "Obligations": "The policy describes activities that various entities 'may' undertake, such as local governments, nonprofits, and higher education institutions, but does not assign enforceable responsibilities.",
+    "Optionality_or_Incentives": "The policy seems to offer support and capacity-building for climate action plans and projects, which aligns with voluntary or incentivized actions rather than mandatory requirements."
+  },
+  "Inference_Chain": [
+    "Step 1: Direct analysis of the current policy shows non-binding terms ('providing', 'building upon', 'implementing') and a collaborative program as the source of authority.",
+    "Step 2: Retrieved Energy Code Board (sim=0.64, Score 3) has similar features in terms of addressing climate change but uses mandatory language and is based on statutory authority.",
+    "Step 3: Retrieved North Carolina Climate Change Interagency Council (sim=0.63, Score 3) shares some elements in terms of interagency collaboration but is based on an executive order with mandatory participation.",
+    "Step 4: Current policy aligns more with voluntary or incentivized programs due to its non-binding language and lack of enforcement mechanisms.",
+    "Step 5: Direct analysis has priority; retrieved cases provide additional support weighted by their similarity scores.",
+    "Step 6: Final judgment: Score 2, Confidence 7."
+  ],
+  "Comparable_Cases": [
+    {
+      "Policy_ID": "policy/1016",
+      "Case_Name": "Energy Code Board",
+      "Score": 3,
+      "Reason": "This case is informative as it represents a mandatory policy with clear legal language and enforcement mechanisms, contrasting with the current policy's voluntary nature."
+    },
+    {
+      "Policy_ID": "policy/476",
+      "Case_Name": "North Carolina Climate Change Interagency Council",
+      "Score": 3,
+      "Reason": "This case is relevant as it involves interagency collaboration like the current policy but is based on an executive order with compulsory participation, highlighting the current policy's lack of binding obligations."
+    }
+  ]
+}
+2025-05-27 04:29:32,878 - INFO - JSON响应验证通过
+2025-05-27 04:29:32,878 - INFO - 最终处理后的JSON对象: {
+  "Score": 2,
+  "Confidence": 7,
+  "Explanation": {
+    "Legal_Language": "The policy uses non-binding terms such as 'providing', 'building upon', and 'implementing', which suggest encouragement rather than obligation. There are no terms like 'shall' or 'must' that indicate mandatory action.",
+    "Source_of_Authority": "The policy is described as a 'program' and a 'collaboration with the Colorado Interagency Climate Team', which suggests it is not based on statute, regulation, or executive order but rather on a cooperative initiative.",
+    "Enforcement_Mechanism": "There are no mentioned penalties, reporting requirements, or compliance deadlines. The policy appears to be aspirational with no consequences for non-compliance.",
+    "Obligations": "The policy describes activities that various entities 'may' undertake, such as local governments, nonprofits, and higher education institutions, but does not assign enforceable responsibilities.",
+    "Optionality_or_Incentives": "The policy seems to offer support and capacity-building for climate action plans and projects, which aligns with voluntary or incentivized actions rather than mandatory requirements."
+  },
+  "Inference_Chain": [
+    "Step 1: Direct analysis of the current policy shows non-binding terms ('providing', 'building upon', 'implementing') and a collaborative program as the source of authority.",
+    "Step 2: Retrieved Energy Code Board (sim=0.64, Score 3) has similar features in terms of addressing climate change but uses mandatory language and is based on statutory authority.",
+    "Step 3: Retrieved North Carolina Climate Change Interagency Council (sim=0.63, Score 3) shares some elements in terms of interagency collaboration but is based on an executive order with mandatory participation.",
+    "Step 4: Current policy aligns more with voluntary or incentivized programs due to its non-binding language and lack of enforcement mechanisms.",
+    "Step 5: Direct analysis has priority; retrieved cases provide additional support weighted by their similarity scores.",
+    "Step 6: Final judgment: Score 2, Confidence 7."
+  ],
+  "Comparable_Cases": {
+    "similar_cases": [
+      {
+        "Policy_ID": "policy/1016",
+        "Case_Name": "Energy Code Board",
+        "Score": 3,
+        "Reason": "This case is informative as it represents a mandatory policy with clear legal language and enforcement mechanisms, contrasting with the current policy's voluntary nature."
+      },
+      {
+        "Policy_ID": "policy/476",
+        "Case_Name": "North Carolina Climate Change Interagency Council",
+        "Score": 3,
+        "Reason": "This case is relevant as it involves interagency collaboration like the current policy but is based on an executive order with compulsory participation, highlighting the current policy's lack of binding obligations."
+      }
+    ],
+    "contrasting_cases": []
+  }
+}
+2025-05-27 04:29:32,878 - INFO - 评分结果: 2, 置信度: 7
+2025-05-27 04:29:32,879 - ERROR - 未找到政策ID: 4

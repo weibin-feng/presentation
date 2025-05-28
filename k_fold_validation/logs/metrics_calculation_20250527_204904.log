@@ -1,0 +1,8 @@
+2025-05-27 20:49:04,526 - INFO - 日志文件已创建: logs/metrics_calculation_20250527_204904.log
+2025-05-27 20:49:04,526 - INFO - 
+=== 初始化指标计算器 ===
+2025-05-27 20:49:04,526 - INFO - 输出目录已创建: metrics_results
+2025-05-27 20:49:04,526 - INFO - 
+=== 开始计算评估指标 ===
+2025-05-27 20:49:04,526 - INFO - 读取文件: evaluation_results/policy_score_with_predictions_final_20250527_044812_revised.xlsx
+2025-05-27 20:49:04,526 - ERROR - 计算指标时发生错误: [Errno 2] No such file or directory: 'evaluation_results/policy_score_with_predictions_final_20250527_044812_revised.xlsx'

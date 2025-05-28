@@ -1,0 +1,41 @@
+2025-05-27 04:15:24,346 - INFO - 日志文件已创建: logs/model_evaluation_20250527_041524.log
+2025-05-27 04:15:24,346 - INFO - 
+=== 初始化模型评估器 ===
+2025-05-27 04:15:24,346 - INFO - 输出目录已创建: evaluation_results
+2025-05-27 04:15:24,350 - INFO - 成功加载 30 条真实评分数据
+2025-05-27 04:15:24,460 - INFO - 
+=== 开始模型评估 ===
+2025-05-27 04:15:24,465 - INFO - 成功加载预测结果: 30 条记录
+2025-05-27 04:15:24,465 - WARNING - 发现 30 条缺失数据:
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 0, Fold: fold
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 0, Fold: fold
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 0, Fold: fold
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 0, Fold: fold
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 0, Fold: fold
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 0, Fold: fold
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 1, Fold: fold
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 1, Fold: fold
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 1, Fold: fold
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 1, Fold: fold
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 1, Fold: fold
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 1, Fold: fold
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 2, Fold: fold
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 2, Fold: fold
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 2, Fold: fold
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 2, Fold: fold
+2025-05-27 04:15:24,466 - WARNING - Policy_ID: 2, Fold: fold
+2025-05-27 04:15:24,467 - WARNING - Policy_ID: 2, Fold: fold
+2025-05-27 04:15:24,467 - WARNING - Policy_ID: 3, Fold: fold
+2025-05-27 04:15:24,467 - WARNING - Policy_ID: 3, Fold: fold
+2025-05-27 04:15:24,467 - WARNING - Policy_ID: 3, Fold: fold
+2025-05-27 04:15:24,467 - WARNING - Policy_ID: 3, Fold: fold
+2025-05-27 04:15:24,467 - WARNING - Policy_ID: 3, Fold: fold
+2025-05-27 04:15:24,467 - WARNING - Policy_ID: 3, Fold: fold
+2025-05-27 04:15:24,467 - WARNING - Policy_ID: 4, Fold: fold
+2025-05-27 04:15:24,467 - WARNING - Policy_ID: 4, Fold: fold
+2025-05-27 04:15:24,467 - WARNING - Policy_ID: 4, Fold: fold
+2025-05-27 04:15:24,467 - WARNING - Policy_ID: 4, Fold: fold
+2025-05-27 04:15:24,467 - WARNING - Policy_ID: 4, Fold: fold
+2025-05-27 04:15:24,467 - WARNING - Policy_ID: 4, Fold: fold
+2025-05-27 04:15:24,467 - INFO - 已删除缺失值，剩余 0 条数据
+2025-05-27 04:15:24,582 - ERROR - 模型评估过程中发生错误: zero-size array to reduction operation fmin which has no identity

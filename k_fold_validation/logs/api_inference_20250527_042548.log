@@ -1,0 +1,131 @@
+2025-05-27 04:25:48,793 - INFO - 日志文件已创建: logs/api_inference_20250527_042548.log
+2025-05-27 04:25:48,794 - INFO - 
+=== 初始化政策评分器 ===
+2025-05-27 04:25:48,794 - INFO - 
+1. 初始化API客户端...
+2025-05-27 04:25:49,074 - INFO - API客户端初始化完成，使用模型: deepseek-chat
+2025-05-27 04:25:49,074 - INFO - 输出目录已创建: evaluation_results
+2025-05-27 04:25:49,074 - INFO - 
+=== 开始处理政策 ===
+2025-05-27 04:25:49,075 - INFO - 找到 30 个提示文件
+2025-05-27 04:25:49,259 - INFO - 
+处理文件: prompt_fold_1_policy_718.txt
+2025-05-27 04:25:49,259 - INFO - 
+=== 评分政策 ===
+2025-05-27 04:25:49,259 - INFO - 调用API...
+2025-05-27 04:26:48,935 - INFO - 成功获取API响应
+2025-05-27 04:26:48,935 - INFO - 
+=== 提取JSON响应 ===
+2025-05-27 04:26:48,935 - INFO - 成功提取JSON字符串
+2025-05-27 04:26:48,936 - INFO - 提取的JSON字符串: {
+  "Score": 3,
+  "Confidence": 8,
+  "Explanation": {
+    "Legal_Language": "The policy uses binding terms such as 'shall' (e.g., 'The Department of General Services shall leverage its management...', 'the Department of General Services shall: c. Reduce greenhouse gas emissions...'). These terms impose clear obligations.",
+    "Source_of_Authority": "The policy appears to stem from a statutory or regulatory source, given the mandatory language and the specific obligations assigned to the Department of General Services.",
+    "Enforcement_Mechanism": "While the policy does not explicitly mention penalties, the use of 'shall' implies enforceable obligations. The Department of General Services is legally required to take specific actions, suggesting accountability mechanisms may exist.",
+    "Obligations": "The Department of General Services is explicitly obligated to act, with responsibilities assigned to reduce greenhouse gas emissions and manage energy demand. These responsibilities are legally enforceable.",
+    "Optionality_or_Incentives": "The policy does not mention any voluntary incentives or optional participation. It is fully mandatory for the Department of General Services."
+  },
+  "Inference_Chain": [
+    "Step 1: Direct analysis of the current policy shows binding terms ('shall') and a likely statutory or regulatory source of authority.",
+    "Step 2: Retrieved 2015, 2025, 2030, 2050 Statewide GHG Targets (sim=0.64, Score 2) has similar features but uses non-binding 'goal' language.",
+    "Step 3: Retrieved Green and Healthy Task Force (sim=0.61, Score 3) shares mandatory language and obligations but lacks explicit penalties.",
+    "Step 4: Current policy aligns more with Green and Healthy Task Force due to the use of 'shall' and clear obligations.",
+    "Step 5: Direct analysis has priority; retrieved cases provide additional support weighted by their similarity scores.",
+    "Step 6: Final judgment: Score 3, Confidence 8."
+  ],
+  "Comparable_Cases": [
+    {
+      "Policy_ID": "policy/1482",
+      "Case_Name": "2015, 2025, 2030, 2050 Statewide GHG Targets",
+      "Score": 2,
+      "Reason": "This case is informative as it contrasts with the current policy by using non-binding 'goal' language, highlighting the stronger bindingness of the current policy."
+    },
+    {
+      "Policy_ID": "policy/1580",
+      "Case_Name": "Green and Healthy Task Force",
+      "Score": 3,
+      "Reason": "This case is relevant as it shares the use of mandatory language ('shall') and clear obligations, supporting the classification of the current policy as mandatory."
+    }
+  ]
+}
+2025-05-27 04:26:48,936 - INFO - 成功解析JSON
+2025-05-27 04:26:48,936 - INFO - 解析后的JSON对象: {
+  "Score": 3,
+  "Confidence": 8,
+  "Explanation": {
+    "Legal_Language": "The policy uses binding terms such as 'shall' (e.g., 'The Department of General Services shall leverage its management...', 'the Department of General Services shall: c. Reduce greenhouse gas emissions...'). These terms impose clear obligations.",
+    "Source_of_Authority": "The policy appears to stem from a statutory or regulatory source, given the mandatory language and the specific obligations assigned to the Department of General Services.",
+    "Enforcement_Mechanism": "While the policy does not explicitly mention penalties, the use of 'shall' implies enforceable obligations. The Department of General Services is legally required to take specific actions, suggesting accountability mechanisms may exist.",
+    "Obligations": "The Department of General Services is explicitly obligated to act, with responsibilities assigned to reduce greenhouse gas emissions and manage energy demand. These responsibilities are legally enforceable.",
+    "Optionality_or_Incentives": "The policy does not mention any voluntary incentives or optional participation. It is fully mandatory for the Department of General Services."
+  },
+  "Inference_Chain": [
+    "Step 1: Direct analysis of the current policy shows binding terms ('shall') and a likely statutory or regulatory source of authority.",
+    "Step 2: Retrieved 2015, 2025, 2030, 2050 Statewide GHG Targets (sim=0.64, Score 2) has similar features but uses non-binding 'goal' language.",
+    "Step 3: Retrieved Green and Healthy Task Force (sim=0.61, Score 3) shares mandatory language and obligations but lacks explicit penalties.",
+    "Step 4: Current policy aligns more with Green and Healthy Task Force due to the use of 'shall' and clear obligations.",
+    "Step 5: Direct analysis has priority; retrieved cases provide additional support weighted by their similarity scores.",
+    "Step 6: Final judgment: Score 3, Confidence 8."
+  ],
+  "Comparable_Cases": [
+    {
+      "Policy_ID": "policy/1482",
+      "Case_Name": "2015, 2025, 2030, 2050 Statewide GHG Targets",
+      "Score": 2,
+      "Reason": "This case is informative as it contrasts with the current policy by using non-binding 'goal' language, highlighting the stronger bindingness of the current policy."
+    },
+    {
+      "Policy_ID": "policy/1580",
+      "Case_Name": "Green and Healthy Task Force",
+      "Score": 3,
+      "Reason": "This case is relevant as it shares the use of mandatory language ('shall') and clear obligations, supporting the classification of the current policy as mandatory."
+    }
+  ]
+}
+2025-05-27 04:26:48,936 - INFO - JSON响应验证通过
+2025-05-27 04:26:48,937 - INFO - 最终处理后的JSON对象: {
+  "Score": 3,
+  "Confidence": 8,
+  "Explanation": {
+    "Legal_Language": "The policy uses binding terms such as 'shall' (e.g., 'The Department of General Services shall leverage its management...', 'the Department of General Services shall: c. Reduce greenhouse gas emissions...'). These terms impose clear obligations.",
+    "Source_of_Authority": "The policy appears to stem from a statutory or regulatory source, given the mandatory language and the specific obligations assigned to the Department of General Services.",
+    "Enforcement_Mechanism": "While the policy does not explicitly mention penalties, the use of 'shall' implies enforceable obligations. The Department of General Services is legally required to take specific actions, suggesting accountability mechanisms may exist.",
+    "Obligations": "The Department of General Services is explicitly obligated to act, with responsibilities assigned to reduce greenhouse gas emissions and manage energy demand. These responsibilities are legally enforceable.",
+    "Optionality_or_Incentives": "The policy does not mention any voluntary incentives or optional participation. It is fully mandatory for the Department of General Services."
+  },
+  "Inference_Chain": [
+    "Step 1: Direct analysis of the current policy shows binding terms ('shall') and a likely statutory or regulatory source of authority.",
+    "Step 2: Retrieved 2015, 2025, 2030, 2050 Statewide GHG Targets (sim=0.64, Score 2) has similar features but uses non-binding 'goal' language.",
+    "Step 3: Retrieved Green and Healthy Task Force (sim=0.61, Score 3) shares mandatory language and obligations but lacks explicit penalties.",
+    "Step 4: Current policy aligns more with Green and Healthy Task Force due to the use of 'shall' and clear obligations.",
+    "Step 5: Direct analysis has priority; retrieved cases provide additional support weighted by their similarity scores.",
+    "Step 6: Final judgment: Score 3, Confidence 8."
+  ],
+  "Comparable_Cases": {
+    "similar_cases": [
+      {
+        "Policy_ID": "policy/1580",
+        "Case_Name": "Green and Healthy Task Force",
+        "Score": 3,
+        "Reason": "This case is relevant as it shares the use of mandatory language ('shall') and clear obligations, supporting the classification of the current policy as mandatory."
+      }
+    ],
+    "contrasting_cases": [
+      {
+        "Policy_ID": "policy/1482",
+        "Case_Name": "2015, 2025, 2030, 2050 Statewide GHG Targets",
+        "Score": 2,
+        "Reason": "This case is informative as it contrasts with the current policy by using non-binding 'goal' language, highlighting the stronger bindingness of the current policy."
+      }
+    ]
+  }
+}
+2025-05-27 04:26:48,937 - INFO - 评分结果: 3, 置信度: 8
+2025-05-27 04:26:48,938 - ERROR - 未找到政策ID: 718
+2025-05-27 04:26:49,944 - INFO - 
+处理文件: prompt_fold_4_policy_1369.txt
+2025-05-27 04:26:49,945 - INFO - 
+=== 评分政策 ===
+2025-05-27 04:26:49,945 - INFO - 调用API...
