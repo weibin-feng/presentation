@@ -1,16 +1,11 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-from sentence_transformers import SentenceTransformer
-import os
 from sklearn.model_selection import StratifiedKFold
 import plotly.express as px
 import plotly.graph_objects as go
 from sklearn.metrics import roc_auc_score, roc_curve, precision_recall_curve, average_precision_score
 from sklearn.preprocessing import label_binarize
-from scipy.stats import gaussian_kde
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support, confusion_matrix
 
 st.set_page_config(

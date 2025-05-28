@@ -1,9 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from sentence_transformers import SentenceTransformer
-import os
-from sklearn.model_selection import StratifiedKFold
+
+
 
 # 页面配置
 st.set_page_config(
