@@ -41,7 +41,7 @@ We build on the Climate-related Financial Policy Index (CRFPI) developed by D’
 which attempts to quantify policy bindingness across more than 70 countries.  
 However, the CRFPI suffers from several serious limitations:
 
-- Covers only ~100 country-year observations, with many missing entries  
+- Covers only ~200 country-year observations, with many missing entries  
 - Ends in 2020, with annual frequency — insufficient for fast-evolving contexts  
 - Lacks a transparent or reproducible evaluation methodology  
 - Not well-suited for focused empirical analysis in a single country like the U.S.
@@ -58,7 +58,7 @@ This study introduces several key innovations:
   A novel scoring framework using **Large Language Models (LLMs)** and **Retrieval-Augmented Generation (RAG)** to automate policy bindingness evaluation
 
 - **Enhanced Data Resolution**:  
-  A monthly U.S.-specific climate policy dataset extended through **May 2025**, enabling more granular empirical research
+  A monthly U.S.-specific climate policy dataset extended through **Jan 2025**, enabling more granular empirical research
 
 - **Research Enabler**:  
   A transparent, scalable, and reproducible indicator to support future analysis of **ESG fund behavior and policy impact**
