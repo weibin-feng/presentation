@@ -1,8 +1,4 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
-from sentence_transformers import SentenceTransformer
-import os
 
 # 页面配置
 st.set_page_config(
